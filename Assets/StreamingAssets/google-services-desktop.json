@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "699234546662",
+    "project_id": "quizflow-analytics",
+    "storage_bucket": "quizflow-analytics.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699234546662:android:763717a1743928ba529c27",
+        "android_client_info": {
+          "package_name": "com.teacher.quizgame"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF-EBRH3xv99dkQOFT2aDGuP5PjY5Ph3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

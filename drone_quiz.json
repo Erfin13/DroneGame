@@ -1,0 +1,124 @@
+{
+  "questions": {
+    "q01": {
+      "questionText": "Dijkstra 演算法主要用於解決什麼問題？",
+      "options": ["資料加密", "最短路徑問題", "圖像辨識", "資料壓縮"],
+      "correctOptionIndex": 1,
+      "difficultyLevel": 1
+    },
+    "q02": {
+      "questionText": "四軸無人機 (Quadcopters) 是透過調整什麼來控制飛行方向？",
+      "options": ["螺旋槳的大小", "馬達的轉速", "機翼的角度", "尾舵的方向"],
+      "correctOptionIndex": 1,
+      "difficultyLevel": 1
+    },
+    "q03": {
+      "questionText": "在 Dijkstra 演算法中，如果邊的權重 (Weight) 為負數，會發生什麼事？",
+      "options": ["演算法依然能正常運作", "演算法會自動轉成正數", "演算法可能失效或產生錯誤結果", "計算速度變快"],
+      "correctOptionIndex": 2,
+      "difficultyLevel": 2
+    },
+    "q04": {
+      "questionText": "無人機上的 IMU 感測器主要功能是什麼？",
+      "options": ["拍攝影像", "測量加速度與角速度", "接收 GPS 訊號", "測量氣壓高度"],
+      "correctOptionIndex": 1,
+      "difficultyLevel": 2
+    },
+    "q05": {
+      "questionText": "Dijkstra 演算法屬於哪種類型的演算法？",
+      "options": ["貪婪演算法 (Greedy)", "動態規劃 (Dynamic Programming)", "分治法 (Divide and Conquer)", "遺傳演算法 (Genetic)"],
+      "correctOptionIndex": 0,
+      "difficultyLevel": 2
+    },
+    "q06": {
+      "questionText": "當四軸無人機要「向前飛行」時，後方兩個馬達的轉速通常會如何變化？",
+      "options": ["減慢", "保持不變", "加快 (提高升力)", "停止轉動"],
+      "correctOptionIndex": 2,
+      "difficultyLevel": 2
+    },
+    "q07": {
+      "questionText": "在路徑規劃中，Dijkstra 演算法通常使用什麼資料結構來選取當前距離最短的節點？",
+      "options": ["堆疊 (Stack)", "佇列 (Queue)", "優先佇列 (Priority Queue)", "雜湊表 (Hash Table)"],
+      "correctOptionIndex": 2,
+      "difficultyLevel": 3
+    },
+    "q08": {
+      "questionText": "無人機常用的「無刷馬達 (BLDC)」相比有刷馬達有何優點？",
+      "options": ["壽命長且效率高", "成本較低", "結構簡單", "重量較重"],
+      "correctOptionIndex": 0,
+      "difficultyLevel": 1
+    },
+    "q09": {
+      "questionText": "Dijkstra 演算法的時間複雜度在使用 Binary Heap 優化後約為多少？(V為頂點數，E為邊數)",
+      "options": ["O(V^2)", "O(E + V log V)", "O(E log V)", "O(V)"],
+      "correctOptionIndex": 2,
+      "difficultyLevel": 3
+    },
+    "q10": {
+      "questionText": "無人機若失去 GPS 訊號，通常會切換到什麼模式以維持穩定？",
+      "options": ["姿態模式 (Attitude Mode)", "返航模式 (RTH)", "自動降落", "運動模式"],
+      "correctOptionIndex": 0,
+      "difficultyLevel": 3
+    },
+    "q11": {
+      "questionText": "若要讓四軸無人機「原地向左旋轉 (Yaw)」，順時針與逆時針的馬達轉速需如何配合？",
+      "options": ["全部加速", "左邊加速，右邊減速", "順時針馬達加速，逆時針減速", "逆時針馬達加速，順時針減速"],
+      "correctOptionIndex": 2,
+      "difficultyLevel": 3
+    },
+    "q12": {
+      "questionText": "Dijkstra 演算法保證能找到最短路徑的前提是什麼？",
+      "options": ["圖中不能有環", "圖是有向圖", "圖中所有邊的權重皆非負", "圖必須是連通的"],
+      "correctOptionIndex": 2,
+      "difficultyLevel": 2
+    },
+    "q13": {
+      "questionText": "無人機的 ESC 電子變速器是用來控制什麼的？",
+      "options": ["電池電壓", "馬達轉速", "相機雲台", "無線電訊號"],
+      "correctOptionIndex": 1,
+      "difficultyLevel": 1
+    },
+    "q14": {
+      "questionText": "在無人機自動導航中，Dijkstra 演算法可以用來做什麼？",
+      "options": ["避開障礙物並規劃最短飛行路徑", "控制馬達轉速", "穩定機身平衡", "辨識地面目標"],
+      "correctOptionIndex": 0,
+      "difficultyLevel": 1
+    },
+    "q15": {
+      "questionText": "A* (A-Star) 演算法與 Dijkstra 的主要差別在於 A* 加入了什麼？",
+      "options": ["負權重邊", "啟發式函數 (Heuristic Function)", "隨機性", "多執行緒"],
+      "correctOptionIndex": 1,
+      "difficultyLevel": 2
+    },
+    "q16": {
+      "questionText": "為了延長無人機的滯空時間，設計上通常會優先考慮什麼？",
+      "options": ["增加機身裝飾", "減輕機身重量 (輕量化)", "使用更小的螺旋槳", "增加馬達數量"],
+      "correctOptionIndex": 1,
+      "difficultyLevel": 1
+    },
+    "q17": {
+      "questionText": "Dijkstra 演算法初始化時，起點到自己的距離設為 0，到其他點的距離通常設為？",
+      "options": ["-1", "1", "無限大 (Infinity)", "0"],
+      "correctOptionIndex": 2,
+      "difficultyLevel": 2
+    },
+    "q18": {
+      "questionText": "LiPo (鋰聚合物) 電池是無人機常用的電源，使用時最忌諱什麼？",
+      "options": ["充飽電存放", "過度放電 (低於 3.3V)", "在室溫下使用", "使用平衡充電器"],
+      "correctOptionIndex": 1,
+      "difficultyLevel": 2
+    },
+    "q19": {
+      "questionText": "如果要在一個像是網格 (Grid) 的地圖上尋路，每個格子移動代價相同，Dijkstra 會退化成什麼演算法？",
+      "options": ["深度優先搜尋 (DFS)", "廣度優先搜尋 (BFS)", "二元搜尋 (Binary Search)", "貝爾曼-福特演算法"],
+      "correctOptionIndex": 1,
+      "difficultyLevel": 3
+    },
+    "q20": {
+      "questionText": "四軸無人機相鄰的兩個馬達，其旋轉方向通常是？",
+      "options": ["相同", "相反", "隨機", "視風向而定"],
+      "correctOptionIndex": 1,
+      "difficultyLevel": 1
+    }
+  }
+}
