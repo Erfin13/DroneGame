@@ -1,137 +1,119 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using XCharts.Runtime; // 引用 XCharts 核心
+using XCharts.Runtime; 
 
 /// <summary>
-/// 結算畫面管理器 (防呆加強版)
-/// 負責讀取暫存的答題資料，並使用 XCharts 繪製長條圖
+/// 結算場景管理器 (XCharts 版本 - 含防誤觸)
+/// [已整理: 資料載入防呆、UI 更新邏輯優化]
 /// </summary>
 public class ResultManager : MonoBehaviour
 {
-    #region Fields (變數宣告)
+    [Header("XCharts 元件")]
+    [Tooltip("請拖入場景中的 BarChart 物件")]
+    public BarChart barChart;
 
-    [Header("圖表元件")]
-    public BarChart scoreChart; 
+    [Header("UI 元件")]
+    [Tooltip("確定按鈕 (登出並回大廳)")]
+    public Button confirmButton;
 
-    [Header("UI")]
-    public Button backToLobbyButton;
-
-    #endregion
-
-    #region Unity Methods (Unity 生命週期)
+    [Tooltip("確認對話框 (需綁定)")]
+    public ConfirmDialog confirmDialog;
 
     void Start()
     {
-        // 確保按鈕有綁定事件
-        if(backToLobbyButton != null)
-            backToLobbyButton.onClick.AddListener(OnBackToLobby);
-
-        // 開始計算並顯示
-        CalculateAndShowData();
+        // 確保載入最新分數
+        GlobalVariables.LoadState();
+        
+        UpdateChartData();
+        
+        if (confirmButton != null) 
+        {
+            confirmButton.onClick.RemoveAllListeners();
+            confirmButton.onClick.AddListener(OnConfirmClicked);
+        }
     }
 
-    #endregion
-
-    #region Private Methods (自定義邏輯)
-
-    void CalculateAndShowData()
+    void UpdateChartData()
     {
-        // --- 0. 防呆檢查：如果沒拉圖表，直接跳出避免報錯 ---
-        if (scoreChart == null)
+        if (barChart == null) 
         {
-            Debug.LogError("❌ [ResultManager] 錯誤：Inspector 裡的 'Score Chart' 欄位是空的！請把場景上的 BarChart 拉進去。");
+            Debug.LogError("[ResultManager] BarChart 未綁定！請在 Inspector 拖入。");
             return;
         }
 
-        // --- 1. 統計分數 ---
-        Dictionary<string, int> scores = new Dictionary<string, int>();
-
-        // 初始化分數 (過濾掉空名字)
-        foreach (string name in GlobalVariables.studentNames)
+        // --- 1. 清除舊資料 ---
+        var yAxis = barChart.GetChartComponent<YAxis>();
+        if (yAxis != null)
         {
-            if (!string.IsNullOrEmpty(name) && !scores.ContainsKey(name))
+            yAxis.ClearData();
+        }
+        
+        // 清空第一組數據 (Serie 0)
+        Serie serie = null;
+        if (barChart.series.Count > 0)
+        {
+            serie = barChart.series[0];
+            serie.ClearData();
+        }
+        else
+        {
+            // 若沒有 Series，可考慮 AddSerie (目前假設場景已設定好)
+            Debug.LogWarning("[ResultManager] BarChart 沒有 Series，無法顯示數據");
+            return; 
+        }
+
+        // --- 2. 填入真實玩家數據 ---
+        // 確保陣列不為空
+        if (GlobalVariables.studentNames == null || GlobalVariables.playerCorrectCounts == null)
+            return;
+
+        for (int i = 0; i < 4; i++)
+        {
+            // 安全檢查
+            if (i >= GlobalVariables.studentNames.Length) break;
+            if (i >= GlobalVariables.playerCorrectCounts.Length) break;
+
+            string pName = GlobalVariables.studentNames[i];
+            int correctCount = GlobalVariables.playerCorrectCounts[i];
+
+            // 名字為空代表沒這個玩家，跳過
+            if (string.IsNullOrEmpty(pName)) continue;
+
+            // (A) 加入 Y 軸標籤 (玩家名字) -> 橫向圖表的 Category 在 Y 軸
+            if (yAxis != null) yAxis.AddData(pName);
+
+            // (B) 加入數值 (答對題數)
+            if (serie != null)
             {
-                scores[name] = 0;
+                serie.AddData(correctCount);
             }
         }
 
-        // 計算答對題數
-        foreach (AnswerData data in GlobalVariables.localAnswerHistory)
-        {
-            if (data.is_correct && scores.ContainsKey(data.student))
-            {
-                scores[data.student]++;
-            }
-        }
-
-        // --- 2. 設定 XCharts ---
-        scoreChart.ClearData(); // 清除舊數據
-
-        // [防呆] 確保有標題元件
-        var title = scoreChart.EnsureChartComponent<Title>();
-        title.text = "小組成績結算";
-        title.show = true;
-
-        // [防呆] 確保有 Legend (圖例) 並隱藏它 (比較美觀)
-        var legend = scoreChart.EnsureChartComponent<Legend>();
-        legend.show = false;
-
-        // [關鍵防呆] 檢查是否有 Serie，如果沒有就自動新增一個
-        if (scoreChart.series.Count == 0)
-        {
-            Debug.Log("⚠️ 圖表缺少 Serie，自動新增一個 Bar Serie...");
-            scoreChart.AddSerie<Bar>("學生分數");
-        }
-
-        // 取得第 0 個 Serie
-        var serie = scoreChart.GetSerie<Bar>(0);
-        if (serie != null)
-        {
-            // 確保有 Label 元件並開啟顯示
-            var label = serie.EnsureComponent<LabelStyle>();
-            label.show = true;
-            label.position = LabelStyle.Position.Top;
-        }
-
-        // --- 3. 填入數據 ---
-        int index = 0;
-        int totalStudents = GlobalVariables.studentNames.Length;
-
-        foreach (string name in GlobalVariables.studentNames)
-        {
-            // 如果名字是空的 (例如沒滿4人)，就跳過不畫
-            if (string.IsNullOrEmpty(name)) continue;
-
-            // 取得分數
-            int score = scores.ContainsKey(name) ? scores[name] : 0;
-
-            // 1. 設定 X 軸名字
-            scoreChart.AddXAxisData(name);
-
-            // 2. 設定 Y 軸分數
-            // 因為上面已經確保了 series 至少有一個，這裡 AddData(0, ...) 就不會報錯了
-            var serieData = scoreChart.AddData(0, score);
-
-            // 3. 設定顏色 (彩虹漸層)
-            if (serieData != null)
-            {
-                var itemStyle = serieData.EnsureComponent<ItemStyle>();
-                // 參數：色相(0~1), 飽和度(0.7), 亮度(1)
-                itemStyle.color = Color.HSVToRGB((float)index / totalStudents, 0.7f, 1.0f);
-            }
-
-            index++;
-        }
+        // --- 3. 刷新圖表 ---
+        barChart.RefreshChart();
     }
 
-    void OnBackToLobby()
+    void OnConfirmClicked()
     {
-        GlobalVariables.ResetGameData();
-        SceneManager.LoadScene("LobbyScene");
+        // 顯示確認對話框
+        if (confirmDialog != null)
+        {
+            confirmDialog.Show(
+                "確定要登出並回到大廳？\n（資料將清空）",
+                () => 
+                {
+                    // 確認後執行：清除狀態 -> 回大廳
+                    GlobalVariables.ClearState();
+                    SceneManager.LoadScene("LobbyScene");
+                }
+            );
+        }
+        else
+        {
+            // Fallback: 直接清除
+            GlobalVariables.ClearState();
+            SceneManager.LoadScene("LobbyScene");
+        }
     }
-
-    #endregion
 }

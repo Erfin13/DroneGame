@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Firebase;
 using Firebase.Database;
 using Firebase.Extensions;
 using UnityEngine.SceneManagement;
@@ -11,6 +10,7 @@ using UnityEngine.SceneManagement;
 /// <summary>
 /// 測驗管理器
 /// 負責處理題目載入、顯示、答題邏輯以及分數上傳
+/// [已整理: 題目載入防呆、答題連點防護、Firebase路徑確保]
 /// </summary>
 public class QuizManager : MonoBehaviour
 {
@@ -21,7 +21,7 @@ public class QuizManager : MonoBehaviour
     public Button[] optionButtons;
     public TextMeshProUGUI[] optionTexts;
     public TextMeshProUGUI loadingText;
-    public TextMeshProUGUI currentPlayerText;
+    public TextMeshProUGUI rewardTextUI; // 新增：顯示本題能量
 
     [Header("音效設定")]
     public AudioSource sfxSource;
@@ -34,33 +34,41 @@ public class QuizManager : MonoBehaviour
     public Color wrongColor = Color.red;
 
     private List<Question> allQuestions = new List<Question>();
-    private int currentQuestionIndex = 0;
     private float questionStartTime;
     private DatabaseReference dbReference;
     private bool isAnswering = false;
-    private int currentPlayerIndex = 0;
 
     #endregion
 
     #region Unity Methods
 
-    /// <summary>
-    /// 初始化 Firebase 參考並開始下載題目
-    /// </summary>
     void Start()
     {
+        // UI 初始化
         if (loadingText != null) loadingText.gameObject.SetActive(true);
         if (questionTextUI != null) questionTextUI.gameObject.SetActive(false);
-        if (currentPlayerText != null) currentPlayerText.text = "";
+        if (rewardTextUI != null) rewardTextUI.text = "";
 
-        if (GlobalVariables.studentNames[0] == null)
+        // 安全檢查: 玩家與 Session
+        GlobalVariables.LoadState(); // Double Ensure
+        if (GlobalVariables.currentPlayerIndex < 0) 
         {
-            GlobalVariables.studentNames = new string[] { "測試A", "測試B", "測試C", "測試D" };
+             Debug.LogWarning("[QuizManager] 未選擇玩家，索引重置為 0");
+             GlobalVariables.currentPlayerIndex = 0;
         }
 
-        // 使用 GlobalVariables 裡的網址
-        string dbUrl = GlobalVariables.DATABASE_URL;
-        dbReference = FirebaseDatabase.GetInstance(dbUrl).RootReference;
+        // Firebase Init
+        try 
+        {
+            string dbUrl = GlobalVariables.DATABASE_URL;
+            dbReference = FirebaseDatabase.GetInstance(dbUrl).RootReference;
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"[QuizManager] Firebase Init Failed: {e.Message}");
+            if (loadingText != null) loadingText.text = "連線失敗";
+            return;
+        }
 
         LoadQuestionsFromFirebase();
     }
@@ -69,175 +77,198 @@ public class QuizManager : MonoBehaviour
 
     #region Private Methods
 
-    /// <summary>
-    /// 從 Firebase Realtime Database 下載題目資料
-    /// </summary>
     void LoadQuestionsFromFirebase()
     {
-        Debug.Log("開始下載題目...");
-        dbReference.Child("questions").GetValueAsync().ContinueWithOnMainThread(task => {
-            if (task.IsFaulted)
-            {
-                Debug.LogError("下載失敗: " + task.Exception);
-            }
-            else if (task.IsCompleted)
-            {
-                DataSnapshot snapshot = task.Result;
-                allQuestions.Clear();
+        allQuestions.Clear();
+        string targetQid = GlobalVariables.selectedQuestionId;
 
-                foreach (DataSnapshot questionNode in snapshot.Children)
+        if (!string.IsNullOrEmpty(targetQid))
+        {
+            Debug.Log($"[QuizManager] 載入單題模式 ID: {targetQid}");
+            dbReference.Child("questions").Child(targetQid).GetValueAsync().ContinueWithOnMainThread(task =>
+            {
+                if (task.IsFaulted || task.IsCanceled)
                 {
-                    Question q = new Question();
-                    q.id = questionNode.Key;
-                    q.questionText = questionNode.Child("questionText").Value != null ? questionNode.Child("questionText").Value.ToString() : "Error Text";
-                    q.correctOptionIndex = questionNode.Child("correctOptionIndex").Value != null ? int.Parse(questionNode.Child("correctOptionIndex").Value.ToString()) : 0;
-
-                    if (questionNode.HasChild("difficultyLevel"))
-                        q.difficultyLevel = int.Parse(questionNode.Child("difficultyLevel").Value.ToString());
-                    else
-                        q.difficultyLevel = 1;
-
-                    q.options = new List<string>();
-                    foreach (DataSnapshot opt in questionNode.Child("options").Children)
-                    {
-                        q.options.Add(opt.Value.ToString());
-                    }
-                    allQuestions.Add(q);
+                    Debug.LogError("[QuizManager] 題目載入失敗");
+                    HandleLoadError("載入錯誤，請重試");
+                    return;
                 }
-                Debug.Log($"成功下載 {allQuestions.Count} 題！");
 
-                if (loadingText != null) loadingText.gameObject.SetActive(false);
-                if (questionTextUI != null) questionTextUI.gameObject.SetActive(true);
-                ShowQuestion();
-            }
-        });
+                if (task.IsCompleted && task.Result.Exists)
+                {
+                    DataSnapshot snapshot = task.Result;
+                    Question q = ParseQuestionSnapshot(snapshot);
+                    allQuestions.Add(q);
+                    
+                    GlobalVariables.selectedQuestionId = ""; // 用完清空，避免重複
+                    OnQuestionsLoaded();
+                }
+                else
+                {
+                    HandleLoadError("題目不存在或 QR Code 無效");
+                }
+            });
+        }
+        else
+        {
+            // 正常流程不應發生，除非直接 Play Scene
+            HandleLoadError("未掃描任何題目 (QID Empty)");
+        }
     }
 
-    /// <summary>
-    /// 顯示目前的題目與選項，並切換當前答題者
-    /// </summary>
+    void HandleLoadError(string msg)
+    {
+        if (loadingText != null) loadingText.text = msg;
+        GlobalVariables.selectedQuestionId = ""; 
+        Invoke("BackToSelectPlayer", 2.0f);
+    }
+
+    void BackToSelectPlayer()
+    {
+        SceneManager.LoadScene("SelectPlayerScene");
+    }
+
+    Question ParseQuestionSnapshot(DataSnapshot questionNode)
+    {
+        Question q = new Question();
+        q.id = questionNode.Key;
+
+        // 安全解析各欄位
+        q.type = questionNode.HasChild("type") ? questionNode.Child("type").Value.ToString() : "quiz";
+        
+        if (questionNode.HasChild("reward"))
+            int.TryParse(questionNode.Child("reward").Value.ToString(), out q.reward);
+        else 
+            q.reward = 10;
+
+        q.questionText = questionNode.Child("questionText").Value != null ? questionNode.Child("questionText").Value.ToString() : "";
+        
+        if (questionNode.Child("correctOptionIndex").Value != null)
+            int.TryParse(questionNode.Child("correctOptionIndex").Value.ToString(), out q.correctOptionIndex);
+        else
+            q.correctOptionIndex = 0;
+
+        q.options = new List<string>();
+        if (questionNode.HasChild("options"))
+        {
+            foreach (DataSnapshot opt in questionNode.Child("options").Children)
+                q.options.Add(opt.Value.ToString());
+        }
+        return q;
+    }
+
+    void OnQuestionsLoaded()
+    {
+        if (loadingText != null) loadingText.gameObject.SetActive(false);
+        if (questionTextUI != null) questionTextUI.gameObject.SetActive(true);
+        
+        if (allQuestions.Count > 0) ShowQuestion();
+    }
+
     void ShowQuestion()
     {
-        if (currentQuestionIndex >= allQuestions.Count)
-        {
-            if (questionTextUI != null) questionTextUI.text = "測驗結束！";
-            Invoke("GoToResultScene", 2.0f);
-            if (currentPlayerText != null) currentPlayerText.text = "";
-            return;
-        }
-
-        // 輪流答題邏輯：使用餘數運算確保在學生名單中循環
-        // 比如 4 個學生，第 5 題 (Index 4) 輪回第 0 位學生
-        int totalStudents = GlobalVariables.studentNames.Length;
-        currentPlayerIndex = currentQuestionIndex % totalStudents;
+        // 只顯示第一題 (單題模式)
+        if (allQuestions.Count == 0) return;
+        Question currentQ = allQuestions[0];
         
-        string currentName = GlobalVariables.studentNames[currentPlayerIndex];
+        if (questionTextUI != null) questionTextUI.text = currentQ.questionText;
 
-        if (currentPlayerText != null)
+        // 顯示能量獎勵
+        if (rewardTextUI != null)
         {
-            currentPlayerText.text = $"現在答題：{currentName}";
+            rewardTextUI.text = $"本題答對可獲得 {currentQ.reward} 能量";
         }
-
-        Question currentQ = allQuestions[currentQuestionIndex];
-        questionTextUI.text = currentQ.questionText;
 
         isAnswering = true;
 
-        for (int i = 0; i < optionButtons.Length; i++)
+        if (optionButtons != null)
         {
-            optionButtons[i].image.color = normalColor;
-            optionButtons[i].interactable = true;
-
-            if (i < currentQ.options.Count)
+            for (int i = 0; i < optionButtons.Length; i++)
             {
-                optionTexts[i].text = currentQ.options[i];
-                optionButtons[i].gameObject.SetActive(true);
-            }
-            else
-            {
-                optionButtons[i].gameObject.SetActive(false);
-            }
+                if (optionButtons[i] == null) continue;
 
-            optionButtons[i].onClick.RemoveAllListeners();
-            int index = i;
-            optionButtons[i].onClick.AddListener(() => OnOptionSelected(index));
+                optionButtons[i].image.color = normalColor;
+                optionButtons[i].interactable = true;
+
+                // 設定選項文字
+                if (currentQ.options != null && i < currentQ.options.Count)
+                {
+                    if (optionTexts[i] != null) optionTexts[i].text = currentQ.options[i];
+                    optionButtons[i].gameObject.SetActive(true);
+                }
+                else
+                {
+                    optionButtons[i].gameObject.SetActive(false);
+                }
+
+                optionButtons[i].onClick.RemoveAllListeners();
+                int index = i;
+                optionButtons[i].onClick.AddListener(() => OnOptionSelected(index));
+            }
         }
 
         questionStartTime = Time.time;
     }
 
-    /// <summary>
-    /// 切換至結算場景
-    /// </summary>
-    void GoToResultScene()
-    {
-        SceneManager.LoadScene("ResultScene");
-    }
-
-    /// <summary>
-    /// 處理選項按鈕點擊事件，判定對錯並上傳資料
-    /// </summary>
-    /// <param name="selectedIndex">玩家選擇的選項 Index</param>
     void OnOptionSelected(int selectedIndex)
     {
         if (!isAnswering) return;
         isAnswering = false;
 
-        Question currentQ = allQuestions[currentQuestionIndex];
+        Question currentQ = allQuestions[0];
         float timeTaken = Time.time - questionStartTime;
         bool isCorrect = (selectedIndex == currentQ.correctOptionIndex);
 
-        Image btnImage = optionButtons[selectedIndex].image;
-        if (isCorrect)
+        // UI 回饋
+        if (optionButtons != null && selectedIndex < optionButtons.Length)
         {
-            btnImage.color = correctColor;
-            if (sfxSource != null && correctClip != null) sfxSource.PlayOneShot(correctClip);
+            Image btnImage = optionButtons[selectedIndex].image;
+            if (isCorrect)
+            {
+                btnImage.color = correctColor;
+                if (sfxSource != null && correctClip != null) sfxSource.PlayOneShot(correctClip);
+                
+                // 更新計分
+                if (GlobalVariables.currentPlayerIndex >= 0 && GlobalVariables.currentPlayerIndex < 4)
+                {
+                    GlobalVariables.playerCorrectCounts[GlobalVariables.currentPlayerIndex]++;
+                    GlobalVariables.SaveState(); // 立即存檔
+                }
+            }
+            else
+            {
+                btnImage.color = wrongColor;
+                if (sfxSource != null && wrongClip != null) sfxSource.PlayOneShot(wrongClip);
+            }
         }
-        else
+
+        // 鎖定所有按鈕
+        if (optionButtons != null)
         {
-            btnImage.color = wrongColor;
-            if (sfxSource != null && wrongClip != null) sfxSource.PlayOneShot(wrongClip);
+            foreach (var btn in optionButtons) 
+                if (btn != null) btn.interactable = false;
         }
 
-        foreach (var btn in optionButtons) btn.interactable = false;
-
-        string currentStudentID = GlobalVariables.studentNames[currentPlayerIndex];
-
-        // 1. 上傳 Analytics (Firebase 分析)
-        // 記錄該次答題的詳細資訊供後台分析
-        if (FirebaseManager.Instance != null)
+        // 上傳紀錄
+        if (FirebaseManager.Instance != null && !string.IsNullOrEmpty(GlobalVariables.currentSessionID))
         {
+            string currentStudentID = GlobalVariables.studentNames[GlobalVariables.currentPlayerIndex];
+            AnswerData data = new AnswerData
+            {
+                question_id = currentQ.id,
+                student = currentStudentID,
+                is_correct = isCorrect,
+                time_taken = timeTaken,
+                timestamp = System.DateTime.Now.ToString("HH:mm:ss")
+            };
+            FirebaseManager.Instance.UploadAnswerToDB(GlobalVariables.currentSessionID, data);
+            
+            // Analytics
             FirebaseManager.Instance.LogAnswer(currentQ.id, isCorrect, timeTaken, currentStudentID);
         }
 
-        // 2. 上傳到 Database
-        // 透過 FirebaseManager 將答題紀錄寫入即時資料庫
-        if (!string.IsNullOrEmpty(GlobalVariables.currentSessionID) && FirebaseManager.Instance != null)
-        {
-            AnswerData data = new AnswerData();
-            data.question_id = currentQ.id;
-            data.student = currentStudentID;
-            data.is_correct = isCorrect;
-            data.time_taken = timeTaken;
-            data.timestamp = System.DateTime.Now.ToString("HH:mm:ss");
-
-            FirebaseManager.Instance.UploadAnswerToDB(GlobalVariables.currentSessionID, data);
-            
-            // 資料暫存：將答題紀錄存入本地列表，以便在結算畫面顯示統計
-            GlobalVariables.localAnswerHistory.Add(data);
-        }
-
-        StartCoroutine(NextQuestionRoutine());
-    }
-
-    /// <summary>
-    /// 延遲後進入下一題
-    /// </summary>
-    IEnumerator NextQuestionRoutine()
-    {
-        yield return new WaitForSeconds(1.0f);
-        currentQuestionIndex++;
-        ShowQuestion();
+        // 答題結束後，一律回到 SelectPlayerScene (延遲 1.5 秒讓玩家看結果)
+        Invoke("BackToSelectPlayer", 1.5f);
     }
 
     #endregion

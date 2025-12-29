@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "699234546662",
+    "firebase_url": "https://quizflow-analytics-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "quizflow-analytics",
     "storage_bucket": "quizflow-analytics.firebasestorage.app"
   },
