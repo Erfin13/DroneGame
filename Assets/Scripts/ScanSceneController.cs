@@ -69,12 +69,24 @@ public class ScanSceneController : MonoBehaviour
         // 2. 解析
         string qid = ParseQid(result);
 
-        if (!string.IsNullOrEmpty(qid))
+        // 3. 嚴格檢查 QID
+        // 只能是 qL1, qL2, qL3
+        // 禁止 qL1_01 或其他任何格式
+        int difficultyCandidate = 0;
+
+        if (qid == "qL1") difficultyCandidate = 1;
+        else if (qid == "qL2") difficultyCandidate = 2;
+        else if (qid == "qL3") difficultyCandidate = 3;
+        
+        if (difficultyCandidate > 0)
         {
-            Debug.Log($"[ScanSceneController] 解析成功 QID: {qid}，準備轉場...");
+            Debug.Log($"[ScanSceneController] 解析成功 Diff: {difficultyCandidate}, 準備轉場...");
             isProcessing = true;
 
-            GlobalVariables.selectedQuestionId = qid;
+            // 設定難度
+            GlobalVariables.selectedDifficultyLevel = difficultyCandidate;
+            // 確保清除單題模式
+            GlobalVariables.selectedQuestionId = "";
 
             // 成功後，手動呼叫停止
             StopCameraSafe();
@@ -84,8 +96,8 @@ public class ScanSceneController : MonoBehaviour
         }
         else
         {
-            // 有 "qid=" 但解析不出值 -> 忽略
-            Debug.LogWarning($"[ScanSceneController] 無法解析 QID 值: {result}");
+            // 若為 qL1_01 或其他格式，一律忽略
+            Debug.LogWarning($"[ScanSceneController] 掃描到無效或被禁止的 QID: {qid} (僅支援 qL1/qL2/qL3)");
         }
     }
 

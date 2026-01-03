@@ -80,40 +80,109 @@ public class QuizManager : MonoBehaviour
     void LoadQuestionsFromFirebase()
     {
         allQuestions.Clear();
-        string targetQid = GlobalVariables.selectedQuestionId;
-
-        if (!string.IsNullOrEmpty(targetQid))
+        
+        // 嚴格禁止固定題號模式
+        if (!string.IsNullOrEmpty(GlobalVariables.selectedQuestionId))
         {
-            Debug.Log($"[QuizManager] 載入單題模式 ID: {targetQid}");
-            dbReference.Child("questions").Child(targetQid).GetValueAsync().ContinueWithOnMainThread(task =>
+            HandleLoadError("錯誤：禁止使用固定題號，請掃描 qL1/qL2/qL3");
+            return;
+        }
+
+        int targetDiff = GlobalVariables.selectedDifficultyLevel;
+        if (targetDiff < 1 || targetDiff > 3)
+        {
+            HandleLoadError("錯誤：未選擇有效難度 (請重新掃描 qL1/qL2/qL3)");
+            return;
+        }
+
+        Debug.Log($"[QuizManager] 準備載入難度 {targetDiff} 的題目...");
+
+        // 從 Root 抓取全部資料，再進行篩選
+        dbReference.GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsFaulted || task.IsCanceled)
             {
-                if (task.IsFaulted || task.IsCanceled)
+                Debug.LogError("[QuizManager] 題目載入失敗 (Network/Firebase Error)");
+                HandleLoadError("資料庫連線錯誤");
+                return;
+            }
+
+            if (task.IsCompleted && task.Result.Exists)
+            {
+                List<Question> candidates = new List<Question>();
+                
+                // 遍歷 Root 下所有 Children (假設每個 Child 是一題)
+                foreach (DataSnapshot child in task.Result.Children)
                 {
-                    Debug.LogError("[QuizManager] 題目載入失敗");
-                    HandleLoadError("載入錯誤，請重試");
+                    try
+                    {
+                        Question q = ParseQuestionSnapshot(child);
+                        // 篩選難度
+                        if (q.difficultyLevel == targetDiff)
+                        {
+                            candidates.Add(q);
+                        }
+                    }
+                    catch (System.Exception ex)
+                    {
+                        // 略過解析失敗的節點 (可能不是題目)
+                        // Debug.LogWarning($"[QuizManager] Node {child.Key} parse skip: {ex.Message}");
+                    }
+                }
+
+                if (candidates.Count == 0)
+                {
+                    HandleLoadError($"題庫中沒有難度 {targetDiff} 的題目");
                     return;
                 }
 
-                if (task.IsCompleted && task.Result.Exists)
+                // 隨機抽題邏輯
+                if (!GlobalVariables.usedQuestionIdsByDifficulty.ContainsKey(targetDiff))
                 {
-                    DataSnapshot snapshot = task.Result;
-                    Question q = ParseQuestionSnapshot(snapshot);
-                    allQuestions.Add(q);
-                    
-                    GlobalVariables.selectedQuestionId = ""; // 用完清空，避免重複
-                    OnQuestionsLoaded();
+                    GlobalVariables.usedQuestionIdsByDifficulty[targetDiff] = new HashSet<string>();
                 }
-                else
+
+                HashSet<string> usedSet = GlobalVariables.usedQuestionIdsByDifficulty[targetDiff];
+                
+                // 找出尚未出過的題目
+                List<Question> available = new List<Question>();
+                foreach (var q in candidates)
                 {
-                    HandleLoadError("題目不存在或 QR Code 無效");
+                    if (!usedSet.Contains(q.id))
+                    {
+                        available.Add(q);
+                    }
                 }
-            });
-        }
-        else
-        {
-            // 正常流程不應發生，除非直接 Play Scene
-            HandleLoadError("未掃描任何題目 (QID Empty)");
-        }
+
+                // 若全部都出過了，重置 (或是看需求是否要結束，這邊先重置)
+                if (available.Count == 0)
+                {
+                    Debug.Log($"[QuizManager] 難度 {targetDiff} 題目已全數出完，重置紀錄...");
+                    usedSet.Clear();
+                    available.AddRange(candidates);
+                }
+
+                // 隨機選一題
+                int rndIndex = Random.Range(0, available.Count);
+                Question finalQ = available[rndIndex];
+
+                // 標記為已使用
+                usedSet.Add(finalQ.id);
+
+                Debug.Log($"[QuizManager] 選中題目: {finalQ.id} (Diff: {finalQ.difficultyLevel})");
+
+                allQuestions.Add(finalQ);
+
+                // 清除暫存難度，避免重複進來
+                GlobalVariables.selectedDifficultyLevel = 0;
+
+                OnQuestionsLoaded();
+            }
+            else
+            {
+                HandleLoadError("資料庫是空的");
+            }
+        });
     }
 
     void HandleLoadError(string msg)
@@ -140,6 +209,21 @@ public class QuizManager : MonoBehaviour
             int.TryParse(questionNode.Child("reward").Value.ToString(), out q.reward);
         else 
             q.reward = 10;
+
+        // 解析難度 (新增)
+        if (questionNode.HasChild("difficultyLevel"))
+        {
+            long diffVal = 1;
+            // Firebase 數值通常為 long
+            if (long.TryParse(questionNode.Child("difficultyLevel").Value.ToString(), out diffVal))
+                q.difficultyLevel = (int)diffVal;
+            else
+                q.difficultyLevel = 1; // 預設
+        }
+        else
+        {
+            q.difficultyLevel = 1; // 若沒欄位預設為 1
+        }
 
         q.questionText = questionNode.Child("questionText").Value != null ? questionNode.Child("questionText").Value.ToString() : "";
         

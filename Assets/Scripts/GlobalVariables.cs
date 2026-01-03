@@ -22,6 +22,16 @@ public static class GlobalVariables
     public static List<AnswerData> localAnswerHistory = new List<AnswerData>();
 
     /// <summary>
+    /// 目前選擇的難度等級 (0=未選, 1/2/3=難度)
+    /// </summary>
+    public static int selectedDifficultyLevel = 0;
+
+    /// <summary>
+    /// 用於避免重複題目的容器 (難度 -> 已出過的題目ID集合)
+    /// </summary>
+    public static Dictionary<int, HashSet<string>> usedQuestionIdsByDifficulty = new Dictionary<int, HashSet<string>>();
+
+    /// <summary>
     /// 指定載入的題目 ID (若為空字串則載入全部)
     /// </summary>
     public static string selectedQuestionId = "";
@@ -104,6 +114,10 @@ public static class GlobalVariables
         else localAnswerHistory = new List<AnswerData>();
 
         selectedQuestionId = "";
+        selectedDifficultyLevel = 0;
+        if (usedQuestionIdsByDifficulty != null) usedQuestionIdsByDifficulty.Clear();
+        else usedQuestionIdsByDifficulty = new Dictionary<int, HashSet<string>>();
+
         currentPlayerIndex = -1;
         energy = 0;
 
