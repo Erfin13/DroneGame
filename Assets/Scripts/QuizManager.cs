@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 /// <summary>
 /// 測驗管理器
 /// 負責處理題目載入、顯示、答題邏輯以及分數上傳
-/// [已整理: 題目載入防呆、答題連點防護、Firebase路徑確保]
+/// [已整理: 題目載入防呆、答題連點防護、Firebase路徑確保、新增題目白底]
 /// </summary>
 public class QuizManager : MonoBehaviour
 {
@@ -18,6 +18,11 @@ public class QuizManager : MonoBehaviour
 
     [Header("UI 元件")]
     public TextMeshProUGUI questionTextUI;
+    
+    // === 新增：題目背景圖片變數 ===
+    public Image questionBgImage; 
+    // ============================
+
     public Button[] optionButtons;
     public TextMeshProUGUI[] optionTexts;
     public TextMeshProUGUI loadingText;
@@ -48,6 +53,13 @@ public class QuizManager : MonoBehaviour
         if (loadingText != null) loadingText.gameObject.SetActive(true);
         if (questionTextUI != null) questionTextUI.gameObject.SetActive(false);
         if (rewardTextUI != null) rewardTextUI.text = "";
+
+        // === 新增：初始化時先隱藏背景 ===
+        if (questionBgImage != null) 
+        {
+            questionBgImage.gameObject.SetActive(false);
+        }
+        // ============================
 
         // 安全檢查: 玩家與 Session
         GlobalVariables.LoadState(); // Double Ensure
@@ -125,8 +137,7 @@ public class QuizManager : MonoBehaviour
                     }
                     catch (System.Exception ex)
                     {
-                        // 略過解析失敗的節點 (可能不是題目)
-                        // Debug.LogWarning($"[QuizManager] Node {child.Key} parse skip: {ex.Message}");
+                        // 略過解析失敗的節點
                     }
                 }
 
@@ -154,7 +165,7 @@ public class QuizManager : MonoBehaviour
                     }
                 }
 
-                // 若全部都出過了，重置 (或是看需求是否要結束，這邊先重置)
+                // 若全部都出過了，重置
                 if (available.Count == 0)
                 {
                     Debug.Log($"[QuizManager] 難度 {targetDiff} 題目已全數出完，重置紀錄...");
@@ -210,19 +221,18 @@ public class QuizManager : MonoBehaviour
         else 
             q.reward = 10;
 
-        // 解析難度 (新增)
+        // 解析難度
         if (questionNode.HasChild("difficultyLevel"))
         {
             long diffVal = 1;
-            // Firebase 數值通常為 long
             if (long.TryParse(questionNode.Child("difficultyLevel").Value.ToString(), out diffVal))
                 q.difficultyLevel = (int)diffVal;
             else
-                q.difficultyLevel = 1; // 預設
+                q.difficultyLevel = 1; 
         }
         else
         {
-            q.difficultyLevel = 1; // 若沒欄位預設為 1
+            q.difficultyLevel = 1; 
         }
 
         q.questionText = questionNode.Child("questionText").Value != null ? questionNode.Child("questionText").Value.ToString() : "";
@@ -244,8 +254,13 @@ public class QuizManager : MonoBehaviour
     void OnQuestionsLoaded()
     {
         if (loadingText != null) loadingText.gameObject.SetActive(false);
+        
         if (questionTextUI != null) questionTextUI.gameObject.SetActive(true);
         
+        // === 新增：題目載入完成後，顯示背景 ===
+        if (questionBgImage != null) questionBgImage.gameObject.SetActive(true);
+        // ===================================
+
         if (allQuestions.Count > 0) ShowQuestion();
     }
 
@@ -255,7 +270,7 @@ public class QuizManager : MonoBehaviour
         if (allQuestions.Count == 0) return;
         Question currentQ = allQuestions[0];
         
-        if (questionTextUI != null) questionTextUI.text = currentQ.questionText;
+        if (questionTextUI != null) questionTextUI.text = "題目: " + currentQ.questionText;
 
         // 顯示能量獎勵
         if (rewardTextUI != null)
@@ -277,7 +292,7 @@ public class QuizManager : MonoBehaviour
                 // 設定選項文字
                 if (currentQ.options != null && i < currentQ.options.Count)
                 {
-                    if (optionTexts[i] != null) optionTexts[i].text = currentQ.options[i];
+                    if (optionTexts[i] != null) optionTexts[i].text = $"{(char)('A' + i)}. {currentQ.options[i]}";
                     optionButtons[i].gameObject.SetActive(true);
                 }
                 else
