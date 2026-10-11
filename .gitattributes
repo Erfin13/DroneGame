@@ -42,3 +42,6 @@
 *.lib filter=lfs diff=lfs merge=lfs -text
 *.bundle filter=lfs diff=lfs merge=lfs -text
 *.pdf filter=lfs diff=lfs merge=lfs -text
+
+# Preserve research archive bytes; existing LFS filters still apply.
+/國科會/** -text

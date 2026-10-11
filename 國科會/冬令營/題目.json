@@ -1,0 +1,3863 @@
+{
+  "qL1_01": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "更換成鮮豔的機殼",
+      "確認電池電量與機身狀況",
+      "貼上喜歡的貼紙",
+      "下載最新的遊戲"
+    ],
+    "questionText": "無人機在地面尚未起飛時，最重要的檢查項目是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_02": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "鏡頭解析度降低",
+      "遙控距離變短",
+      "飛行續航時間縮短",
+      "馬達聲音變大"
+    ],
+    "questionText": "如果無人機電池老化，最先受到影響的是哪一項？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_03": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "升力大小與飛行穩定性",
+      "電池充電的速度",
+      "記憶卡存取速度",
+      "圖傳訊號的延遲"
+    ],
+    "questionText": "螺旋槳的數量會直接影響無人機的哪個能力？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_04": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "增加螺旋槳的轉速",
+      "自動調整飛行姿態保持穩定",
+      "減少電池的重量",
+      "提升相機的畫質"
+    ],
+    "questionText": "飛行控制器的存在，主要是為了解決哪一個問題？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_05": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 1,
+    "options": [
+      "起落架",
+      "圖傳系統",
+      "避障雷達",
+      "飛控系統 (IMU)"
+    ],
+    "questionText": "當無人機傾斜時，哪個系統會進行修正？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_06": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "播放音樂",
+      "增加重量",
+      "感知環境與輔助定位",
+      "散熱降溫"
+    ],
+    "questionText": "無人機上的感測器主要用來做什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_07": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "接收並執行飛手指令",
+      "自動懸停",
+      "紀錄影像",
+      "消耗電力"
+    ],
+    "questionText": "若沒有遙控訊號，無人機最可能無法完成哪件事？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_08": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "風速大小",
+      "氣壓計或感測器數據",
+      "機身顏色",
+      "鏡頭焦距"
+    ],
+    "questionText": "無人機起飛後保持高度，最依賴哪一項？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_09": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "最大飛行高度",
+      "飛行滯空時間",
+      "最大飛行速度",
+      "抗風能力等級"
+    ],
+    "questionText": "電池容量大小，最直接影響哪一項表現？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_10": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "接收遙控訊號",
+      "儲存飛行影片",
+      "產生動力帶動螺旋槳",
+      "計算飛行路徑"
+    ],
+    "questionText": "無人機馬達的主要功能是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_11": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "檢查螺旋槳是否安裝牢固",
+      "檢查雲朵形狀",
+      "檢查午餐菜單",
+      "檢查衣服顏色"
+    ],
+    "questionText": "無人機在地面尚未起飛時，最重要的檢查項目是最合理？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_12": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "充電速度變快",
+      "電池外觀變亮",
+      "續航力明顯下降",
+      "重量自動減輕"
+    ],
+    "questionText": "如果無人機電池老化，最先受到影響的是哪一個因素？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_13": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "確保訊號傳輸穩定安全",
+      "讓無人機飛得更高",
+      "節省電池電力",
+      "增加拍攝解析度"
+    ],
+    "questionText": "無人機起飛前做訊號干擾，最主要是為了什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_14": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "確認周圍空域安全無障礙",
+      "確認有沒有帶錢包",
+      "確認自拍棒長度",
+      "確認風扇轉速"
+    ],
+    "questionText": "無人機進行起飛前檢查時，最合理的是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_15": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "機身解體",
+      "建立控制連線",
+      "電池過熱",
+      "鏡頭模糊"
+    ],
+    "questionText": "無人機進行遙控器配對時，最可能的結果是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_16": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "提升飛行安全性與穩定度",
+      "增加飛行噪音",
+      "降低電池電壓",
+      "干擾其他無人機"
+    ],
+    "questionText": "無人機上的感測器主要用來做最合理？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_17": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "讓遙控器能指揮無人機",
+      "增加無人機重量",
+      "減少風阻係數",
+      "改變機身顏色"
+    ],
+    "questionText": "無人機起飛前做遙控器配對，最主要是為了什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_18": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "遙控器的廠牌",
+      "氣壓計與飛控運算",
+      "螺旋槳的顏色",
+      "記憶卡的容量"
+    ],
+    "questionText": "無人機起飛後保持高度，最依賴哪一個因素？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_19": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "能飛多久 (續航力)",
+      "能飛多快 (極速)",
+      "能飛多遠 (訊號)",
+      "能錄多久 (容量)"
+    ],
+    "questionText": "電池容量大小，最直接影響哪一個因素表現？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_20": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "產生旋轉動力",
+      "產生無線訊號",
+      "產生冷氣",
+      "產生導航地圖"
+    ],
+    "questionText": "無人機馬達的主要功能是最合理？",
+    "reward": 1,
+    "type": "quiz"
+  },
+"qL1_21": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "更換成不同顏色的螺旋槳",
+      "確認周遭建築物與障礙物的高度",
+      "幫無人機貼上貼紙",
+      "播放很大聲的音樂"
+    ],
+    "questionText": "無人機進行安全高度設定時，最應先做哪一步？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_22": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "先吃飽飯補充體力",
+      "閉上眼睛祈禱飛行順利",
+      "移除雲台保護罩並檢查外觀",
+      "把遙控器丟在地上測試耐摔度"
+    ],
+    "questionText": "無人機進行起飛前檢查時，最應先做哪一步？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_23": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "圖傳延遲或操控失靈",
+      "電池電力變多",
+      "畫質自動升級為 8K",
+      "機身重量減輕"
+    ],
+    "questionText": "若忽略訊號干擾，最可能造成哪一種問題？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_24": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "檢查外觀有無膨脹或破損",
+      "幫電池畫畫增加美觀",
+      "把電池拿去曬太陽殺菌",
+      "用水清洗電池表面"
+    ],
+    "questionText": "為了避免飛行失控，電池保養時最應先做哪一步？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_25": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 1,
+    "options": [
+      "為了讓無人機看起來更帥",
+      "為了增加載重能力到 100 公斤",
+      "為了讓螺旋槳轉得更慢",
+      "確保重心穩定以利飛行"
+    ],
+    "questionText": "無人機起飛前做機身平衡，最主要是為了什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_26": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "為了切換成潛水模式",
+      "確認目前處於適合的飛行模式 (如 GPS 模式)",
+      "為了把螢幕關掉省電",
+      "為了測試按鈕好不好按"
+    ],
+    "questionText": "無人機起飛前做飛行模式切換，最主要是為了什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_27": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "避免風大造成飛機飄移或墜毀",
+      "為了讓無人機吹風散熱",
+      "為了測試抗風級數能否發電",
+      "為了把地上的樹葉吹走"
+    ],
+    "questionText": "無人機起飛前做風速判斷，最主要是為了什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_28": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "關掉馬達讓它自由落體",
+      "用手去抓高速旋轉的螺旋槳",
+      "觀察地面平坦並緩慢下降",
+      "快速衝向地面節省時間"
+    ],
+    "questionText": "關於降落流程，下列哪個說法最正確？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_29": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 1,
+    "options": [
+      "螺絲越鬆越好以減少重量",
+      "用快乾膠把螺絲全部黏死",
+      "故意少鎖一顆螺絲沒關係",
+      "確認鬆緊度適中避免震動鬆脫"
+    ],
+    "questionText": "無人機進行螺絲固定時，最需要注意什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_30": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "透過雲台調整俯仰角度取得好構圖",
+      "讓無人機一直快速轉圈圈",
+      "永遠只能由正上方往下拍",
+      "拍攝時一定要關閉電源"
+    ],
+    "questionText": "關於拍攝角度，下列哪個說法最正確？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_31": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "只檢查自拍好不好看",
+      "檢查槳葉、電池電量與周遭環境",
+      "檢查有沒有帶零食",
+      "檢查手機有沒有追劇"
+    ],
+    "questionText": "關於起飛前檢查，下列哪個說法最正確？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_32": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "設定高度高於該區域最高的障礙物",
+      "設定為 0 公尺",
+      "設定飛到外太空去",
+      "設定比地板還低"
+    ],
+    "questionText": "無人機進行返航設定時，最合理的是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_33": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "飛行速度變兩倍",
+      "電池續航力增加",
+      "無人機無法接收指令",
+      "畫質變清晰"
+    ],
+    "questionText": "若忽略遙控器配對，最可能造成哪一種問題？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_34": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "讓無人機變形成機器人",
+      "防止機件因震動而鬆脫分離",
+      "增加無人機的飛行噪音",
+      "讓電池自動充電"
+    ],
+    "questionText": "為了避免飛行失控，螺絲固定時最可能的結果是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_35": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 1,
+    "options": [
+      "無人機會瞬間解體",
+      "遙控器會爆炸",
+      "記憶卡會自動格式化",
+      "誤闖管制區導致違法或危險"
+    ],
+    "questionText": "若忽略禁飛區辨識，最可能造成哪一種問題？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_36": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "將機身放置於水平地面靜止不動",
+      "在空中邊飛邊校正",
+      "用力搖晃機身",
+      "放在水面上校正"
+    ],
+    "questionText": "無人機進行感測器校正時，最合理的是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_37": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "系統警告並限制起飛或進入",
+      "無人機自動升級成戰鬥機",
+      "獲得高額獎金",
+      "圖傳畫面變成黑白"
+    ],
+    "questionText": "無人機進行禁飛區辨識時，最可能的結果是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_38": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "為了讓馬達休息",
+      "為了消耗多餘電力",
+      "取得理想的畫面構圖",
+      "為了嚇跑路人"
+    ],
+    "questionText": "無人機進行拍攝角度時，主要目的為何？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_39": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "雲朵的形狀",
+      "該區域最高的建築或樹木高度",
+      "地上螞蟻的數量",
+      "旁邊大樓的房價"
+    ],
+    "questionText": "無人機進行安全高度設定時，最需要注意什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_40": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "立刻推油門起飛",
+      "等待衛星定位完成並記錄返航點",
+      "關閉遙控器電源",
+      "對著無人機大喊指令"
+    ],
+    "questionText": "為了避免飛行失控，GPS定位時最應先做哪一步？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_41": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "自動煞停或繞過障礙物",
+      "加速衝撞障礙物",
+      "機身自動變透明",
+      "發出雷射光擊碎障礙物"
+    ],
+    "questionText": "無人機進行防撞保護時，最可能的結果是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_42": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 1,
+    "options": [
+      "螺絲越鬆越省電",
+      "可以用膠帶代替螺絲",
+      "不同長度的螺絲可以隨便混用",
+      "需使用規格相符的工具並確認鎖緊"
+    ],
+    "questionText": "關於螺絲固定，下列哪個說法最正確？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_43": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "重心應盡量位於中心位置",
+      "重心越偏左邊越好",
+      "電池隨便裝不影響重心",
+      "掛載重物不需要考慮平衡"
+    ],
+    "questionText": "關於機身平衡，下列哪個說法最正確？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_44": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "在機翼上掛水桶",
+      "確保電池安裝到位且無晃動",
+      "拆掉一邊的螺旋槳",
+      "把無人機倒過來放"
+    ],
+    "questionText": "無人機進行機身平衡時，最合理的是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_45": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "建立遙控器與飛機的通訊連結",
+      "讓遙控器可以看電視",
+      "為了省電",
+      "增加飛行速度"
+    ],
+    "questionText": "為了避免飛行失控，遙控器配對時主要目的為何？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_46": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "讓無人機指北針失效",
+      "增加無人機重量",
+      "確保飛行方向判斷正確",
+      "讓馬達轉速更快"
+    ],
+    "questionText": "為了避免飛行失控，指南針校正時主要目的為何？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_47": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "切換時機身會自動翻滾",
+      "不同模式的操控反應與輔助功能不同",
+      "切換模式會導致斷電",
+      "只能在關機時切換"
+    ],
+    "questionText": "為了避免飛行失控，飛行模式切換時最需要注意什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_48": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "空中斷電導致墜機",
+      "飛行時間變無限長",
+      "電池顏色變淡",
+      "遙控距離變遠"
+    ],
+    "questionText": "若忽略電池保養，最可能造成哪一種問題？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_49": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "飛機飛得太高",
+      "拍攝畫面不清晰",
+      "返航時撞上障礙物或電量不足無法回航",
+      "螺旋槳轉速過快"
+    ],
+    "questionText": "若忽略返航設定，最可能造成哪一種問題？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_50": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "全部安裝同一種方向的螺旋槳",
+      "區分正反槳並確認安裝牢固",
+      "只安裝兩支螺旋槳",
+      "用膠帶黏貼螺旋槳"
+    ],
+    "questionText": "為了避免飛行失控，螺旋槳安裝時最合理的是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_51": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "修復已知錯誤並優化性能",
+      "讓操作介面變得很難用",
+      "刪除所有飛行紀錄",
+      "降低相機畫質"
+    ],
+    "questionText": "為了避免飛行失控，韌體更新時主要目的為何？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_52": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "把電池電量用到 0%",
+      "拆除所有螺旋槳並丟棄",
+      "確保電池電量充足（通常 >50%）",
+      "在雨天進行更新"
+    ],
+    "questionText": "為了避免飛行失控，韌體更新時最應先做哪一步？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_53": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "將高度設為 0",
+      "根據周圍障礙物高度設定合理的返航高度",
+      "關閉 GPS 功能",
+      "設定返航速度為最大值"
+    ],
+    "questionText": "為了避免飛行失控，返航設定時最應先做哪一步？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_54": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 1,
+    "options": [
+      "放在易燃物旁邊充電",
+      "充飽後繼續充三天",
+      "使用破損的充電線",
+      "使用原廠充電器並在有人看管下充電"
+    ],
+    "questionText": "為了避免飛行失控，電池充電時最合理的是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_55": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "確保硬體與系統狀態安全可飛",
+      "為了拖延時間",
+      "為了讓觀眾拍照",
+      "檢查有沒有帶便當"
+    ],
+    "questionText": "為了避免飛行失控，起飛前檢查時主要目的為何？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_56": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "為了墜毀飛機",
+      "將無人機安全回收至地面",
+      "測試起落架的耐撞度",
+      "為了嚇跑地上的小動物"
+    ],
+    "questionText": "無人機進行降落流程時，主要目的為何？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_57": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "電池可以丟在水裡保存",
+      "膨脹的電池可以繼續使用",
+      "長期存放應保持在保存電壓（約 50-60%）",
+      "電池外皮破損沒關係"
+    ],
+    "questionText": "關於電池保養，下列哪個說法最正確？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_58": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 1,
+    "options": [
+      "自己的髮型會不會亂",
+      "風的顏色",
+      "雲飄的方向",
+      "風速是否超過無人機的抗風等級"
+    ],
+    "questionText": "無人機進行風速判斷時，最需要注意什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_59": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "確保飛行姿態穩定且不耗費額外動力",
+      "為了讓無人機看起來比較重",
+      "為了增加風阻",
+      "為了讓螺旋槳打架"
+    ],
+    "questionText": "無人機進行機身平衡時，主要目的為何？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_60": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "確認環境無線電狀況以確保連線穩定",
+      "故意干擾別人的飛機",
+      "測試能不能接收廣播電台",
+      "為了讓手機無法上網"
+    ],
+    "questionText": "無人機進行訊號干擾時，主要目的為何？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_61": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "更新是為了讓無人機變重",
+      "修復系統錯誤並提升功能或安全性",
+      "更新後會自動刪除所有照片",
+      "更新是為了增加耗電量"
+    ],
+    "questionText": "關於韌體更新，下列哪個說法最正確？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_62": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "防止飛行震動導致零件鬆脫",
+      "讓無人機飛得比光速快",
+      "為了增加無人機的重量",
+      "為了讓外觀看起來比較酷"
+    ],
+    "questionText": "無人機進行螺絲固定時，最可能的結果是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_63": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "畫質會變差",
+      "無法精確懸停與執行自動返航",
+      "電池會瞬間沒電",
+      "遙控器會爆炸"
+    ],
+    "questionText": "若忽略GPS定位，最可能造成哪一種問題？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_64": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "拍出構圖不佳或穿幫的畫面",
+      "無人機直接墜毀",
+      "電池續航力減半",
+      "記憶卡被格式化"
+    ],
+    "questionText": "若忽略拍攝角度，最可能造成哪一種問題？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_65": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "檢查外觀有無膨脹、破損或漏液",
+      "把電池拿去泡水",
+      "把電池丟在地上摔摔看",
+      "用火烤電池"
+    ],
+    "questionText": "無人機進行電池保養時，最應先做哪一步？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_66": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "電池的顏色",
+      "避免長期滿電存放或過度放電",
+      "電池的味道",
+      "電池能不能浮在水面上"
+    ],
+    "questionText": "無人機進行電池保養時，最需要注意什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_67": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "拍攝畫面變成黑白",
+      "無人機抗風不足導致飄移或墜毀",
+      "遙控器會自動關機",
+      "GPS 訊號變強"
+    ],
+    "questionText": "若忽略風速判斷，最可能造成哪一種問題？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_68": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "在飛行中進行更新",
+      "把電池拔掉進行更新",
+      "確保電量充足且網路連線穩定",
+      "更新時用手抓住螺旋槳"
+    ],
+    "questionText": "無人機進行韌體更新時，最合理的是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_69": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "確保方向感測準確以避免迷航",
+      "增加無人機的重量",
+      "讓鏡頭可以透視物體",
+      "延長電池壽命"
+    ],
+    "questionText": "無人機起飛前做指南針校正，最主要是為了什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_70": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "槳葉脫落或因正反槳錯誤無法起飛",
+      "無人機變身成潛水艇",
+      "飛行速度變成兩倍",
+      "遙控器訊號增強"
+    ],
+    "questionText": "若忽略螺旋槳安裝，最可能造成哪一種問題？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_71": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "撞擊障礙物導致炸機",
+      "飛機自動飛回火星",
+      "相機自動開啟美肌模式",
+      "馬達聲音變好聽"
+    ],
+    "questionText": "若忽略防撞保護，最可能造成哪一種問題？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_72": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "記錄返航點 (Home Point) 與輔助懸停",
+      "為了讓手機可以上網",
+      "為了增加螺旋槳轉速",
+      "為了讓電池充電"
+    ],
+    "questionText": "無人機起飛前做GPS定位，最主要是為了什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_73": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "產生升力推動無人機飛行",
+      "當作裝飾品",
+      "為了切水果",
+      "為了幫電池散熱"
+    ],
+    "questionText": "無人機起飛前做螺旋槳安裝，最主要是為了什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_74": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "設定為 0 公尺",
+      "設定高於周圍最高的障礙物",
+      "設定低於樹木的高度",
+      "設定到大氣層外"
+    ],
+    "questionText": "無人機進行安全高度設定時，最合理的是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_75": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "成功搜尋衛星並鎖定位置",
+      "無人機開始亂飛",
+      "鏡頭蓋自動打開",
+      "遙控器螢幕變黑"
+    ],
+    "questionText": "無人機進行GPS定位時，最可能的結果是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_76": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "確認負載固定且重心居中",
+      "把重物掛在單邊機翼上",
+      "電池隨便塞進去就好",
+      "在機身上綁石頭"
+    ],
+    "questionText": "為了避免飛行失控，機身平衡時最合理的是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_77": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "返航高度越低越好",
+      "返航高度不需要設定",
+      "返航高度應高於飛行路徑上的障礙物",
+      "返航時一定要倒著飛"
+    ],
+    "questionText": "關於返航設定，下列哪個說法最正確？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_78": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "閉眼睛祈禱",
+      "確實執行檢查清單 (Checklist)",
+      "只檢查自拍棒有沒有帶",
+      "檢查有沒有帶錢包"
+    ],
+    "questionText": "為了避免飛行失控，起飛前檢查時最合理的是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_79": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "提升飛行穩定性與操控手感",
+      "無人機會一直在空中翻跟斗",
+      "電池耗電量增加",
+      "馬達會過熱燒毀"
+    ],
+    "questionText": "為了避免飛行失控，機身平衡時最可能的結果是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_80": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "電池會自動充電",
+      "重落地導致機身受損或傷人",
+      "畫質變清晰",
+      "遙控距離變遠"
+    ],
+    "questionText": "若忽略降落流程，最可能造成哪一種問題？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_81": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "GPS 能幫助無人機懸停穩定與自動返航",
+      "GPS 主要是為了增加飛行速度",
+      "GPS 可以讓電池永遠有電",
+      "室內飛行一定收得到 GPS"
+    ],
+    "questionText": "關於GPS定位，下列哪個說法最正確？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_82": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "飛行速度變快",
+      "拍攝畫質變好",
+      "起飛後電壓不足導致強制降落或墜機",
+      "遙控器自動升級"
+    ],
+    "questionText": "若忽略電池充電，最可能造成哪一種問題？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_83": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "高壓電塔、鋼筋建築或密集 Wi-Fi 區可能造成干擾",
+      "訊號干擾會讓電池變充飽",
+      "只有下雨天會有訊號干擾",
+      "訊號干擾能讓畫質變好"
+    ],
+    "questionText": "關於訊號干擾，下列哪個說法最正確？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_84": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 1,
+    "options": [
+      "為了增加飛行阻力",
+      "為了讓外觀更好看",
+      "為了消耗電力",
+      "開啟避障功能或安裝槳葉保護罩以提升安全"
+    ],
+    "questionText": "無人機起飛前做防撞保護，最主要是為了什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_85": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "確認電壓正常且無膨脹，避免空中斷電",
+      "為了把電池洗乾淨",
+      "為了減輕電池重量",
+      "為了改變電池顏色"
+    ],
+    "questionText": "無人機起飛前做電池保養，最主要是為了什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_86": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "改變畫面構圖與視野",
+      "無人機自動降落",
+      "電池電量增加",
+      "螺旋槳停止轉動"
+    ],
+    "questionText": "無人機進行拍攝角度時，最可能的結果是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_87": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "把遙控器摔在地上",
+      "按照說明書步驟啟動配對模式",
+      "拆掉天線",
+      "關閉所有電源"
+    ],
+    "questionText": "為了避免飛行失控，遙控器配對時最應先做哪一步？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_88": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "為了尋找更多小鳥",
+      "為了測試無人機敢不敢飛",
+      "避免誤闖管制空域觸法或發生危險",
+      "為了增加飛行高度"
+    ],
+    "questionText": "無人機起飛前做禁飛區辨識，最主要是為了什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_89": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "風速超過機型抗風等級應避免飛行",
+      "風越大越省電",
+      "無人機完全不怕風",
+      "風速不影響飛行穩定度"
+    ],
+    "questionText": "關於風速判斷，下列哪個說法最正確？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_90": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "飛行速度變兩倍",
+      "圖傳卡頓、操控延遲或觸發自動返航",
+      "電池自動充電",
+      "畫質變 8K"
+    ],
+    "questionText": "無人機進行訊號干擾時，最可能的結果是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_91": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "應遠離大型金屬與磁場干擾源進行校正",
+      "一定要在車子裡面校正",
+      "校正就是把指南針拆下來",
+      "校正後無人機就能潛水"
+    ],
+    "questionText": "關於指南針校正，下列哪個說法最正確？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_92": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "保持遙控器與無人機在近距離範圍內",
+      "把遙控器拿到隔壁房間",
+      "配對時必須要在水裡",
+      "配對時要一直轉動螺旋槳"
+    ],
+    "questionText": "無人機進行遙控器配對時，最合理的是什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_93": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "無人機飛得比較快",
+      "無法使用新功能或存在已知系統漏洞",
+      "電池壽命變長",
+      "畫質會變差"
+    ],
+    "questionText": "若忽略韌體更新，最可能造成哪一種問題？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_94": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 1,
+    "options": [
+      "為了讓無人機自動去買飲料",
+      "為了節省記憶卡空間",
+      "確保訊號丟失時能安全飛回起飛點",
+      "為了讓飛機倒著飛"
+    ],
+    "questionText": "無人機起飛前做返航設定，最主要是為了什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_95": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "飛行不穩、馬達過熱或耗電增加",
+      "飛行速度變光速",
+      "遙控器沒電",
+      "相機畫素降低"
+    ],
+    "questionText": "若忽略機身平衡，最可能造成哪一種問題？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_96": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 1,
+    "options": [
+      "起飛後會變得很開心",
+      "會飛到外太空",
+      "電池會越飛越多電",
+      "帶病飛行導致空中故障或墜機"
+    ],
+    "questionText": "若忽略起飛前檢查，最可能造成哪一種問題？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_97": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "避免使用膨脹、破損或電壓異常的電池",
+      "電池外觀貼紙好不好看",
+      "電池是不是名牌",
+      "電池有沒有香味"
+    ],
+    "questionText": "為了避免飛行失控，電池保養時最需要注意什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_98": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 1,
+    "options": [
+      "閉上眼睛飛行",
+      "隨時注意訊號強度並保持視距內飛行",
+      "把天線折斷",
+      "飛得越遠越好"
+    ],
+    "questionText": "無人機進行訊號干擾時，最需要注意什麼？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL1_99": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 1,
+    "options": [
+      "機場、軍事基地與核電廠周邊通常為禁飛區",
+      "禁飛區裡面飛行訊號比較好",
+      "只要飛得低就可以在禁飛區飛",
+      "晚上可以在禁飛區飛"
+    ],
+    "questionText": "關於禁飛區辨識，下列哪個說法最正確？",
+    "reward": 1,
+    "type": "quiz"
+  },
+  "qL2_01": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "選擇障礙較多的路線以節省時間",
+      "選擇障礙較少的路線以降低碰撞風險",
+      "選擇隨機路線以增加樂趣",
+      "兩者皆可，無須考量障礙物"
+    ],
+    "questionText": "若兩條飛行路線距離相同，但其中一條障礙較多，應如何選擇？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_02": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 2,
+    "options": [
+      "優先選擇風景優美的路徑",
+      "優先選擇飛行高度最高的路徑",
+      "優先選擇能耗最低或距離最短的路徑",
+      "優先選擇需要複雜操作的路徑"
+    ],
+    "questionText": "當無人機電量有限時，路徑規劃應優先考慮什麼？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_03": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 2,
+    "options": [
+      "為了消耗更多步數",
+      "為了展示飛行技巧",
+      "完全隨機的移動決策",
+      "犧牲效率以換取更高安全性的策略"
+    ],
+    "questionText": "在桌遊情境中，選擇繞路通常代表哪一種策略？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_04": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "抗風耗電增加導致電量可能不足",
+      "順風會讓無人機飛太快失控",
+      "風力增強會讓GPS訊號變強",
+      "強風會讓螺旋槳停止轉動"
+    ],
+    "questionText": "若途中風力變強，原先規劃的路徑為何可能不適合？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_05": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "能夠利用慣性節省電力",
+      "頻繁加減速與轉向會增加耗電與時間成本",
+      "會增加圖傳訊號的強度",
+      "可以自動避開所有障礙物"
+    ],
+    "questionText": "多次轉彎的路線，對無人機飛行有何影響？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_06": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 2,
+    "options": [
+      "因為危險區域通常訊號比較好",
+      "因為可以拍攝到更刺激的畫面",
+      "因為大幅降低了發生意外與墜機的機率",
+      "因為可以縮短飛行距離"
+    ],
+    "questionText": "為什麼避開危險區域可能讓任務更成功？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_07": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 2,
+    "options": [
+      "為了測試電池的極限續航力",
+      "為了多錄製一些飛行影片",
+      "因為操作員想要練習長距離飛行",
+      "為了確保飛行安全與訊號穩定"
+    ],
+    "questionText": "若安全路線較長，仍被選擇的主要原因是什麼？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_08": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "自動加速衝過去",
+      "自動煞停、懸停或嘗試繞行",
+      "立即關閉馬達降落",
+      "發出聲音驅趕障礙物"
+    ],
+    "questionText": "當感測器偵測到障礙物，系統通常會怎麼做？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_09": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "直線飛行或轉彎最少的路徑",
+      "高度變化最大的路徑",
+      "障礙物最多的挑戰路徑",
+      "隨風向漂流的路徑"
+    ],
+    "questionText": "若飛行時間受限，路徑選擇應偏向哪一類？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_10": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 2,
+    "options": [
+      "路徑上的風景優美程度",
+      "路徑的形狀是否好看",
+      "潛在的環境風險與法規限制",
+      "是否經過朋友家"
+    ],
+    "questionText": "在有多條可行路線時，什麼因素最不應被忽略？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_11": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "低電量會導致無人機重量變輕",
+      "剩餘電量可能不足以支持原路返航或抗風",
+      "低電量會讓飛行速度變快",
+      "低電量會干擾指南針運作"
+    ],
+    "questionText": "遇到電量只剩下15%時，為什麼原先規劃的路線可能不再適合？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_12": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "側風會造成機身偏移需額外耗電修正",
+      "側風會幫助無人機充電",
+      "側風會讓避障系統失效",
+      "側風會讓遙控器訊號變強"
+    ],
+    "questionText": "遇到遇到側風變強時，為什麼原先規劃的路線可能不再適合？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_13": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 2,
+    "options": [
+      "積極進攻策略",
+      "隨機探索策略",
+      "節省資源策略",
+      "風險規避策略"
+    ],
+    "questionText": "在桌遊情境中，選擇繞路在多數情況下代表哪一種策略？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_14": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "風力增強會提高飛行速度",
+      "抗風飛行會大幅增加耗電量縮短續航",
+      "風力會吹走GPS訊號",
+      "風力會冷卻電池導致無法放電"
+    ],
+    "questionText": "若途中風力變強，原先規劃的路徑主要原因是什麼可能不適合？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_15": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 2,
+    "options": [
+      "緊貼著禁飛區邊緣飛行",
+      "直接快速穿越禁飛區",
+      "預留緩衝距離繞行",
+      "飛到禁飛區上方高空通過"
+    ],
+    "questionText": "若要繞開禁飛區，以下哪個決策最能降低風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_16": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "儘速降落或尋找最短安全返航路徑",
+      "關閉避障系統以節省電力",
+      "繼續執行原本的拍攝任務",
+      "爬升到最高高度利用滑翔返航"
+    ],
+    "questionText": "當無人機電量只剩下15%時，路徑規劃應優先考慮什麼才能兼顧碰撞風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_17": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "全速通過彎道",
+      "提前減速並平滑化轉彎軌跡",
+      "到轉彎處再急煞轉向",
+      "關閉GPS以進行手動飄移"
+    ],
+    "questionText": "在任務模擬中若路線有很多急轉彎，最合理的策略是哪一種？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_18": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 2,
+    "options": [
+      "加速衝撞以突破障礙",
+      "立即切斷電源",
+      "主動煞停並發出警示或繞道",
+      "開啟閃光燈驅離障礙"
+    ],
+    "questionText": "當感測器偵測到障礙物，系統在多數情況下會怎麼做？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_19": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 2,
+    "options": [
+      "飛到人的正上方觀察",
+      "加速從人旁邊掠過",
+      "保持原定路線不變",
+      "保持安全距離懸停或主動遠離"
+    ],
+    "questionText": "當無人機前方突然有人走近時，路徑規劃應優先考慮什麼才能兼顧控制穩定？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_20": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "計算最短且安全的繞行路徑",
+      "等待障礙物自行消失",
+      "直接放棄任務返航",
+      "忽視障礙物繼續飛行"
+    ],
+    "questionText": "當無人機飛行路線中出現新障礙時，路徑規劃應優先考慮什麼才能兼顧完成時間？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_21": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "降低飛行高度或尋找避風路徑",
+      "切換至手動模式並加速衝刺",
+      "關閉 GPS 以減少干擾",
+      "垂直爬升至最高高度"
+    ],
+    "questionText": "若遇到側風變強，以下哪個決策最能降低風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_22": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "行人會吸收無線電訊號",
+      "違反與人群保持安全距離的規定",
+      "無人機的噪音會吸引行人靠近",
+      "行人會導致 GPS 訊號丟失"
+    ],
+    "questionText": "遇到前方突然有人走近時，為什麼原先規劃的路線可能不再適合？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_23": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "重新計算一條遠離障礙物的安全路徑",
+      "加速通過以減少暴露時間",
+      "關閉避障感測器以避免誤判",
+      "保持原路徑並相信運氣"
+    ],
+    "questionText": "當無人機飛行路線中出現新障礙時，路徑規劃應優先考慮什麼才能兼顧碰撞風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_24": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 2,
+    "options": [
+      "立即降落",
+      "加速飛行脫離該區域",
+      "改用 GPS 定位或氣壓計維持高度與位置",
+      "不斷旋轉機身尋找標記"
+    ],
+    "questionText": "當無人機地面標記點被遮住時，路徑規劃應優先考慮什麼才能兼顧控制穩定？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_25": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "順風飛行以增加速度",
+      "預留抗風修正的動力餘裕與空間",
+      "關閉姿態增穩模式",
+      "讓無人機隨風漂流"
+    ],
+    "questionText": "當無人機遇到側風變強時，路徑規劃應優先考慮什麼才能兼顧控制穩定？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_26": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 2,
+    "options": [
+      "急轉彎會讓電池過熱",
+      "急轉彎會導致遙控訊號中斷",
+      "急轉彎容易產生視覺誤差",
+      "慣性可能導致航線偏移或失速"
+    ],
+    "questionText": "遇到路線有很多急轉彎時，為什麼原先規劃的路線可能不再適合？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_27": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 2,
+    "options": [
+      "飛得更快以減少傳輸時間",
+      "改用低解析度錄影",
+      "降低飛行速度與複雜度以確保安全",
+      "關閉圖傳系統"
+    ],
+    "questionText": "當無人機相機畫面延遲變大時，路徑規劃應優先考慮什麼才能兼顧耗電？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_28": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "全速飛行",
+      "選擇距離最短且轉彎最少的平滑路徑",
+      "忽略所有障礙物直接穿越",
+      "不斷爬升與下降"
+    ],
+    "questionText": "當無人機需要在限時內完成任務時，路徑規劃應優先考慮什麼才能兼顧耗電？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_29": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "避免依賴視覺定位，改採 GPS 導航",
+      "降低高度貼地飛行",
+      "增加飛行速度",
+      "手動關閉所有定位輔助"
+    ],
+    "questionText": "若地面標記點被遮住，你會如何調整飛行計畫讓任務更可能成功？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_30": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 2,
+    "options": [
+      "依靠自動避障系統全速前進",
+      "相信自己的直覺盲飛",
+      "請旁人幫忙看",
+      "拉大與障礙物的緩衝距離並減速"
+    ],
+    "questionText": "當無人機相機畫面延遲變大時，路徑規劃應優先考慮什麼才能兼顧碰撞風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_31": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "逆風全速衝刺",
+      "適當降低高度利用地形遮蔽",
+      "關閉動力隨風飄",
+      "不斷旋轉機身"
+    ],
+    "questionText": "在任務模擬中若遇到側風變強，最合理的策略是哪一種？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_32": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "操作反應不及可能導致撞擊",
+      "畫面延遲會導致電池耗盡",
+      "畫面延遲會讓機身變重",
+      "畫面延遲會改變風向"
+    ],
+    "questionText": "遇到相機畫面延遲變大時，為什麼原先規劃的路線可能不再適合？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_33": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 2,
+    "options": [
+      "忽略風的影響直線飛行",
+      "等待風停",
+      "修正航向抵消風偏，避免反覆修正浪費時間",
+      "順風繞一大圈"
+    ],
+    "questionText": "當無人機遇到側風變強時，路徑規劃應優先考慮什麼才能兼顧完成時間？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_34": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "調整天線角度或飛往空曠處增加視距 (LOS)",
+      "下降到建築物後方",
+      "快速旋轉機身",
+      "關閉遙控器電源重開"
+    ],
+    "questionText": "當無人機訊號變弱但仍可控制時，路徑規劃應優先考慮什麼才能兼顧控制穩定？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_35": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "加速從頭頂飛過",
+      "懸停等待或繞道飛行",
+      "下降高度嚇阻對方",
+      "開啟閃光燈"
+    ],
+    "questionText": "若前方突然有人走近，以下哪個決策最能降低風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_36": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 2,
+    "options": [
+      "逆風全速飛行",
+      "頻繁爬升與下降",
+      "停在原地懸停",
+      "避免長時間逆風懸停或飛行"
+    ],
+    "questionText": "當無人機遇到側風變強時，路徑規劃應優先考慮什麼才能兼顧耗電？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_37": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "預留緩衝區，不貼近邊緣飛行",
+      "緊貼著禁飛區邊緣切西瓜",
+      "快速穿越禁飛區角落",
+      "飛得很高越過禁飛區"
+    ],
+    "questionText": "在任務模擬中若要繞開禁飛區，最合理的策略是哪一種？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_38": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 2,
+    "options": [
+      "關閉 GPS 進入姿態模式",
+      "依賴視覺避障",
+      "確保 GPS 訊號良好以避免飄移誤入",
+      "降低高度貼地飛行"
+    ],
+    "questionText": "當無人機要繞開禁飛區時，路徑規劃應優先考慮什麼才能兼顧控制穩定？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_39": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "每個彎都停下來再轉",
+      "將路徑平滑化，減少減速再加速的過程",
+      "用最高速度甩尾過彎",
+      "忽視航點直接飛直線"
+    ],
+    "questionText": "當無人機路線有很多急轉彎時，路徑規劃應優先考慮什麼才能兼顧完成時間？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_40": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 2,
+    "options": [
+      "立即全速降落",
+      "關閉所有感測器",
+      "拉高高度切換至 GPS 定位",
+      "左右快速搖晃機身"
+    ],
+    "questionText": "若地面標記點被遮住，以下哪個決策最能降低風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_41": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "切換至 GPS 模式或姿態模式並保持高度",
+      "立即關閉馬達迫降",
+      "降低高度尋找標記",
+      "忽視警告繼續自動飛行"
+    ],
+    "questionText": "在任務模擬中若地面標記點被遮住，最合理的策略是哪一種？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_42": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 2,
+    "options": [
+      "全程使用運動模式全速飛行",
+      "省略起飛前檢查以節省時間",
+      "規劃最短且安全的飛行路徑，並考量風向",
+      "忽略低電量警示繼續飛行"
+    ],
+    "questionText": "若需要在限時內完成任務，以下哪個決策最能降低風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_43": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "加速衝刺以節省時間",
+      "選擇直線或順風路徑盡快返航",
+      "爬升至最高高度",
+      "執行複雜的避障動作"
+    ],
+    "questionText": "當無人機電量只剩下15%時，路徑規劃應優先考慮什麼才能兼顧耗電？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_44": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "拉高高度或移動至空曠處以避開障礙物",
+      "降低高度貼地飛行",
+      "飛往建築物後方",
+      "加速飛行以衝過訊號盲區"
+    ],
+    "questionText": "當無人機訊號變弱但仍可控制時，路徑規劃應優先考慮什麼才能兼顧碰撞風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_45": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "禁飛區會改變風向",
+      "原路徑可能穿越禁飛區或其緩衝區",
+      "禁飛區會消耗電池",
+      "禁飛區會讓無人機隱形"
+    ],
+    "questionText": "遇到要繞開禁飛區時，為什麼原先規劃的路線可能不再適合？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_46": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 2,
+    "options": [
+      "限時會改變 GPS 訊號",
+      "無人機速度會自動變快",
+      "原路徑距離過長或轉彎過多導致耗時",
+      "物理定律會改變"
+    ],
+    "questionText": "遇到需要在限時內完成任務時，為什麼原先規劃的路線可能不再適合？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_47": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "調整天線方向或縮短與遙控器的距離",
+      "飛得更遠以測試極限",
+      "躲在樹後測試訊號穿透力",
+      "關閉遙控器電源"
+    ],
+    "questionText": "當無人機訊號變弱但仍可控制時，路徑規劃應優先考慮什麼才能兼顧安全？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_48": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "原地懸停直到人離開",
+      "保持安全距離並平滑繞行，不完全停下",
+      "加速從頭頂飛過",
+      "立即降落放棄任務"
+    ],
+    "questionText": "當無人機前方突然有人走近時，路徑規劃應優先考慮什麼才能兼顧完成時間？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_49": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 2,
+    "options": [
+      "繼續向前探索",
+      "降低高度貼地飛行",
+      "原地快速旋轉",
+      "啟動自動返航或手動飛回視距內"
+    ],
+    "questionText": "若訊號變弱但仍可控制，以下哪個決策最能降低風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_50": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "減速懸停，依賴目視 (VLOS) 或儀表飛行",
+      "加速飛行以盡快完成",
+      "相信延遲的畫面繼續飛行",
+      "空中重啟無人機"
+    ],
+    "questionText": "在任務模擬中若相機畫面延遲變大，最合理的策略是哪一種？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_51": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 2,
+    "options": [
+      "加速飛行以完成拍攝",
+      "關閉避障系統繼續任務",
+      "放棄剩餘非必要任務，立即規劃最短路徑返航",
+      "忽視電量警示"
+    ],
+    "questionText": "若電量只剩下15%，你會如何調整飛行計畫讓任務更可能成功？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_52": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "增加與障礙物的安全距離並簡化路徑",
+      "貼近物體飛行以看清楚",
+      "選擇複雜的穿梭路徑",
+      "採用高速飛行路徑"
+    ],
+    "questionText": "當無人機相機畫面延遲變大時，路徑規劃應優先考慮什麼才能兼顧安全？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_53": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "盲目加速衝過訊號弱區",
+      "移動至訊號良好區域以恢復正常飛行速度",
+      "立即原地降落並走過去撿",
+      "忽視訊號警告"
+    ],
+    "questionText": "當無人機訊號變弱但仍可控制時，路徑規劃應優先考慮什麼才能兼顧完成時間？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_54": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 2,
+    "options": [
+      "飛近打招呼",
+      "快速通過人群上方",
+      "保持法規規定的安全距離 (如 30公尺) 或懸停",
+      "低空飛行嚇跑對方"
+    ],
+    "questionText": "當無人機前方突然有人走近時，路徑規劃應優先考慮什麼才能兼顧安全？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_55": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "升高至安全高度或移動至空曠處避免飄移撞擊",
+      "貼地飛行尋找特徵點",
+      "貼近牆壁飛行",
+      "高速飛行以減少暴露時間"
+    ],
+    "questionText": "當無人機地面標記點被遮住時，路徑規劃應優先考慮什麼才能兼顧碰撞風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_56": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 2,
+    "options": [
+      "直接飛越禁飛區",
+      "完全折返起飛點",
+      "沿著禁飛區邊緣規劃最短繞行路徑",
+      "原地懸停等待禁飛區解除"
+    ],
+    "questionText": "當無人機要繞開禁飛區時，路徑規劃應優先考慮什麼才能兼顧完成時間？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_57": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "憑感覺盲飛",
+      "改用目視飛行 (VLOS) 輔助操作",
+      "切換至運動模式",
+      "快速搖晃遙控器"
+    ],
+    "questionText": "若相機畫面延遲變大，以下哪個決策最能降低風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_58": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "入彎前減速以避免慣性飄移",
+      "全速過彎以展現技術",
+      "關閉增穩系統",
+      "增加更多急轉彎"
+    ],
+    "questionText": "當無人機路線有很多急轉彎時，路徑規劃應優先考慮什麼才能兼顧安全？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_59": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 2,
+    "options": [
+      "每個轉彎都完全煞停再轉",
+      "出彎時急加速",
+      "採用垂直升降方式移動",
+      "將路徑平滑化，減少頻繁加減速"
+    ],
+    "questionText": "當無人機路線有很多急轉彎時，路徑規劃應優先考慮什麼才能兼顧耗電？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_60": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "立即降落或返回最近的安全降落點",
+      "堅持繼續執行任務",
+      "飛往更遠的航點",
+      "原地懸停等待救援"
+    ],
+    "questionText": "當無人機電量只剩下15%時，路徑規劃應優先考慮什麼才能兼顧安全？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_61": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "忽視警告繼續執行任務",
+      "立即取消任務並執行返航或降落",
+      "切換到運動模式加速完成",
+      "原地懸停直到沒電"
+    ],
+    "questionText": "在任務模擬中若電量只剩下15%，最合理的策略是哪一種？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_62": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "降低高度或改變航線以減少風阻影響",
+      "逆風全速衝刺",
+      "爬升到最高高度",
+      "關閉動力隨風漂流"
+    ],
+    "questionText": "若遇到側風變強，你會如何調整飛行計畫讓任務更可能成功？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_63": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 2,
+    "options": [
+      "全程全速盲飛",
+      "忽略所有避障警告",
+      "規劃最短且避開障礙物的平滑路徑",
+      "貼近障礙物飛行以縮短距離"
+    ],
+    "questionText": "當無人機需要在限時內完成任務時，路徑規劃應優先考慮什麼才能兼顧安全？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_64": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "選擇最近的安全路徑返航",
+      "執行複雜的特技動作",
+      "飛往更遠的目標點",
+      "降低高度慢慢飛"
+    ],
+    "questionText": "當無人機電量只剩下15%時，路徑規劃應優先考慮什麼才能兼顧完成時間？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_65": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "加速飛行以減少傳輸時間",
+      "減緩飛行速度並增加與障礙物的緩衝距離",
+      "飛到更遠的地方尋找訊號",
+      "關閉圖傳完全依賴自動避障"
+    ],
+    "questionText": "若相機畫面延遲變大，你會如何調整飛行計畫讓任務更可能成功？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_66": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "原地懸停直到人離開",
+      "平滑調整航線繞行，減少急煞與重新加速",
+      "垂直急爬升",
+      "立即降落關機"
+    ],
+    "questionText": "當無人機前方突然有人走近時，路徑規劃應優先考慮什麼才能兼顧耗電？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_67": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "優化航點順序，減少不必要的轉彎與停留",
+      "忽視電量限制",
+      "關閉所有安全輔助功能",
+      "隨機選擇飛行路線"
+    ],
+    "questionText": "若需要在限時內完成任務，你會如何調整飛行計畫讓任務更可能成功？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_68": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "快速大幅度移動尋找標記",
+      "依靠 GPS 保持穩定飛行，減少不必要的修正動作",
+      "不斷升降高度測試",
+      "開啟探照燈增加耗電"
+    ],
+    "questionText": "當無人機地面標記點被遮住時，路徑規劃應優先考慮什麼才能兼顧耗電？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_69": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "全速過彎",
+      "入彎前減速並平滑化轉彎半徑",
+      "關閉 GPS",
+      "增加負載"
+    ],
+    "questionText": "若路線有很多急轉彎，以下哪個決策最能降低風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_70": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "因為存在直接碰撞的風險",
+      "因為會導致電池爆炸",
+      "因為障礙物會幫無人機充電",
+      "因為會讓遙控器失靈"
+    ],
+    "questionText": "遇到飛行路線中出現新障礙時，為什麼原先規劃的路線可能不再適合？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_71": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "直接穿越障礙物",
+      "重新規劃航線以安全距離繞過障礙",
+      "加速衝過去",
+      "閉上眼睛飛行"
+    ],
+    "questionText": "若飛行路線中出現新障礙，你會如何調整飛行計畫讓任務更可能成功？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_72": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "選擇距離最短且轉折最少的路徑",
+      "選擇風景最好的路徑",
+      "選擇高度變化最大的路徑",
+      "選擇經過最多障礙的路徑"
+    ],
+    "questionText": "當無人機需要在限時內完成任務時，路徑規劃應優先考慮什麼才能兼顧完成時間？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_73": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "切換至運動模式全速返航",
+      "保持平穩飛行，避免急加減速導致電壓驟降",
+      "進行翻滾特技",
+      "以最大下降速度垂直降落"
+    ],
+    "questionText": "當無人機電量只剩下15%時，路徑規劃應優先考慮什麼才能兼顧控制穩定？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_74": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "貼近障礙物飛行",
+      "增加與障礙物的安全緩衝距離，預留抗風空間",
+      "順風加速衝刺",
+      "關閉定位系統"
+    ],
+    "questionText": "當無人機遇到側風變強時，路徑規劃應優先考慮什麼才能兼顧安全？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_75": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "降低高度飛越頭頂",
+      "暫停前進，保持安全距離或繞道飛行",
+      "加速通過",
+      "開啟警報器驅趕"
+    ],
+    "questionText": "若前方突然有人走近，你會如何調整飛行計畫讓任務更可能成功？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_76": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "主動繞行或懸停",
+      "嘗試從縫隙鑽過去",
+      "加速衝撞",
+      "切換手動模式盲飛"
+    ],
+    "questionText": "若飛行路線中出現新障礙，以下哪個決策最能降低風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_77": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "規劃流暢不中斷的飛行路徑",
+      "頻繁起降",
+      "一直更換電池",
+      "忽略所有禁飛區"
+    ],
+    "questionText": "在任務模擬中若需要在限時內完成任務，最合理的策略是哪一種？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_78": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "降低高度貼地飛行",
+      "拉高高度以確保 GPS 收訊並遠離障礙物",
+      "加速飛行",
+      "關閉遙控器"
+    ],
+    "questionText": "當無人機地面標記點被遮住時，路徑規劃應優先考慮什麼才能兼顧安全？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_79": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "更新航線以避開障礙",
+      "直接降落",
+      "撞上去",
+      "呼叫航管"
+    ],
+    "questionText": "在任務模擬中若飛行路線中出現新障礙，最合理的策略是哪一種？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_80": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "保持足夠的安全間距",
+      "縮短與障礙物的距離",
+      "加速通過",
+      "關閉避障功能"
+    ],
+    "questionText": "當無人機飛行路線中出現新障礙時，路徑規劃應優先考慮什麼才能兼顧安全？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_81": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "直接穿越以節省時間",
+      "規劃繞行路徑並預留緩衝區",
+      "飛到雲層上面通過",
+      "遮蔽 GPS 訊號強行進入"
+    ],
+    "questionText": "若要繞開禁飛區，你會如何調整飛行計畫讓任務更可能成功？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_82": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 2,
+    "options": [
+      "選擇複雜但距離短的捷徑",
+      "選擇空曠且視野良好的路徑",
+      "貼地高速飛行",
+      "關閉所有感測器以提升速度"
+    ],
+    "questionText": "當無人機需要在限時內完成任務時，路徑規劃應優先考慮什麼才能兼顧碰撞風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_83": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "將直角轉彎修改為圓弧轉彎以保持平穩",
+      "使用急煞過彎",
+      "過彎時加速",
+      "過彎時關閉馬達"
+    ],
+    "questionText": "當無人機路線有很多急轉彎時，路徑規劃應優先考慮什麼才能兼顧控制穩定？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_84": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "規劃簡單直線路徑，減少需要精細操作的動作",
+      "加速盲飛",
+      "不斷旋轉鏡頭確認",
+      "降低畫質並全速飛行"
+    ],
+    "questionText": "當無人機相機畫面延遲變大時，路徑規劃應優先考慮什麼才能兼顧完成時間？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_85": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "調整位置至訊號良好處或返航",
+      "繼續往訊號弱的地方飛",
+      "下降高度",
+      "關閉天線"
+    ],
+    "questionText": "在任務模擬中若訊號變弱但仍可控制，最合理的策略是哪一種？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_86": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "因為可能隨時斷訊導致失控 (Failsafe)",
+      "因為訊號弱會讓無人機變慢",
+      "因為訊號弱會耗電",
+      "因為訊號弱會讓畫質變好"
+    ],
+    "questionText": "遇到訊號變弱但仍可控制時，為什麼原先規劃的路線可能不再適合？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_87": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "平滑化航點軌跡",
+      "增加更多轉彎",
+      "提高飛行速度",
+      "移除螺旋槳"
+    ],
+    "questionText": "若路線有很多急轉彎，你會如何調整飛行計畫讓任務更可能成功？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_88": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "保持與禁飛區邊界的足夠距離",
+      "貼著邊界飛行",
+      "忽視禁飛區警告",
+      "加速衝過去"
+    ],
+    "questionText": "當無人機要繞開禁飛區時，路徑規劃應優先考慮什麼才能兼顧安全？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_89": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "平穩地繞行，避免急躁操作",
+      "急煞急轉",
+      "原地快速旋轉",
+      "直接切斷電源"
+    ],
+    "questionText": "當無人機飛行路線中出現新障礙時，路徑規劃應優先考慮什麼才能兼顧控制穩定？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_90": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "改用 GPS 導航並維持一定高度直飛",
+      "貼地慢慢尋找標記",
+      "降落等待標記出現",
+      "亂飛碰運氣"
+    ],
+    "questionText": "當無人機地面標記點被遮住時，路徑規劃應優先考慮什麼才能兼顧完成時間？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_91": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "主動避讓並保持距離",
+      "靠近觀察",
+      "停在原地不動",
+      "發出噪音"
+    ],
+    "questionText": "在任務模擬中若前方突然有人走近，最合理的策略是哪一種？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_92": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "立即返航降落",
+      "繼續拍攝",
+      "飛得更高",
+      "飛得更遠"
+    ],
+    "questionText": "若電量只剩下15%，以下哪個決策最能降低風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_93": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "減速並避免複雜運鏡",
+      "加速飛行",
+      "快速左右搖擺",
+      "關閉圖傳"
+    ],
+    "questionText": "當無人機相機畫面延遲變大時，路徑規劃應優先考慮什麼才能兼顧控制穩定？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_94": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "選擇最短的繞行路徑",
+      "大幅度繞遠路",
+      "原地懸停思考",
+      "反覆升降高度"
+    ],
+    "questionText": "當無人機飛行路線中出現新障礙時，路徑規劃應優先考慮什麼才能兼顧耗電？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_95": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "因為失去視覺定位可能導致懸停不穩或飄移",
+      "因為標記點會發射訊號",
+      "因為會讓電池短路",
+      "因為會讓相機過熱"
+    ],
+    "questionText": "遇到地面標記點被遮住時，為什麼原先規劃的路線可能不再適合？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_96": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "縮短飛行距離，避免進入死角",
+      "飛得更遠",
+      "躲在建築物後面",
+      "降低天線角度"
+    ],
+    "questionText": "若訊號變弱但仍可控制，你會如何調整飛行計畫讓任務更可能成功？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_97": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "遠離下風處的障礙物",
+      "貼近上風處的障礙物",
+      "穿越樹林避風",
+      "降至地面高度飛行"
+    ],
+    "questionText": "當無人機遇到側風變強時，路徑規劃應優先考慮什麼才能兼顧碰撞風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_98": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "減速過彎以防止慣性飄移撞擊",
+      "加速過彎",
+      "閉眼過彎",
+      "貼近內側過彎"
+    ],
+    "questionText": "當無人機路線有很多急轉彎時，路徑規劃應優先考慮什麼才能兼顧碰撞風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL2_99": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 2,
+    "options": [
+      "預留誤差空間，避免因訊號或定位誤差誤闖",
+      "貼近禁飛區邊緣",
+      "飛越禁飛區",
+      "鑽入地下道"
+    ],
+    "questionText": "當無人機要繞開禁飛區時，路徑規劃應優先考慮什麼才能兼顧碰撞風險？",
+    "reward": 2,
+    "type": "quiz"
+  },
+  "qL3_01": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 3,
+    "options": [
+      "為了測試無人機的極限機動性能",
+      "證明導航系統具備隨機路徑生成能力",
+      "以犧牲部分效率（距離/時間）為代價，換取更高的任務成功率與安全性",
+      "因為系統運算錯誤導致無法鎖定直線路徑"
+    ],
+    "questionText": "當最短路徑風險過高時，系統改走繞路的真正目的為何？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_02": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 3,
+    "options": [
+      "單純指幾何距離最短的直線路徑",
+      "完全不考慮耗電，只追求絕對零風險的路徑",
+      "隨機選擇一條滿足任一條件的路徑",
+      "在多重目標權衡（Trade-off）下的綜合成本最低解"
+    ],
+    "questionText": "若同時考慮距離、耗電與安全，最佳路徑代表什麼概念？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_03": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 3,
+    "options": [
+      "忽略次要的硬性限制以確保能找到路徑",
+      "優先滿足所有硬性約束（Hard Constraints），再尋求目標函數最佳化",
+      "直接降低飛行高度以避開所有立體限制",
+      "將所有限制視為軟性建議（Soft Constraints）僅供參考"
+    ],
+    "questionText": "在限制條件增加的情況下，路徑選擇最重要的原則是什麼？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_04": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 3,
+    "options": [
+      "因為最短路徑的計算複雜度通常最高",
+      "因為總成本函數（Cost Function）包含了風險、耗能或法規限制等非距離因素",
+      "演算法設計瑕疵導致無法識別直線",
+      "為了讓無人機多飛一會兒進行暖機"
+    ],
+    "questionText": "為何演算法不一定選擇距離最短的路線？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_05": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 3,
+    "options": [
+      "系統會規劃出穿過禁飛區但飛行速度較慢的路徑",
+      "無人機會在禁飛區邊緣自動降落並關機",
+      "路徑規劃器會給予該區域無限大或極高的成本值，迫使路徑繞行",
+      "對路徑沒有影響，僅會對操作員發出警告聲響"
+    ],
+    "questionText": "將禁飛區視為高成本區域，對決策結果有何影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_06": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 3,
+    "options": [
+      "強制使用備用電池容量（緊急預留區）飛行",
+      "忽略安全限制，強行穿越危險區以節省電力",
+      "關閉部分馬達以節省電力並繼續任務",
+      "修改任務參數（如減輕負載、降低速度）或設置中途充電點"
+    ],
+    "questionText": "若所有安全路線都耗電過高，任務可能需要怎麼調整？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_07": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 3,
+    "options": [
+      "滿足每一個單一目標的極大值（如同時最快且最省電）",
+      "符合加權成本函數最小化或帕累托最優（Pareto Optimal）的狀態",
+      "計算運算時間最短的路徑",
+      "完全由人工操作員主觀決定的路徑"
+    ],
+    "questionText": "在多目標條件下，所謂最佳解代表什麼意義？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_08": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 3,
+    "options": [
+      "永遠以效率為第一優先，忽略風險",
+      "隨機選擇一種策略進行嘗試",
+      "依據預設的權重係數（Weights）計算總成本來決定優先級",
+      "自動停止任務並原地降落等待指令"
+    ],
+    "questionText": "當風險與效率衝突時，系統通常如何取捨？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_09": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "因為該路線的累積成本（Cumulative Cost）高於當前最佳路徑",
+      "因為系統記憶體不足無法儲存該路線",
+      "因為該路線過於筆直，缺乏美感",
+      "因為地圖資料尚未更新，系統無法識別"
+    ],
+    "questionText": "為何某些路線雖然可行，卻不被系統選擇？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_10": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 3,
+    "options": [
+      "讓操作員覺得像在玩遊戲，降低操作壓力",
+      "將環境抽象化，利用標準圖搜尋演算法（如 A* 或 Dijkstra）進行路徑解算",
+      "可以省略物理碰撞的檢測，簡化運算",
+      "能夠自動產生隨機地圖，增加訓練多樣性"
+    ],
+    "questionText": "將桌遊規則轉換為成本模型，有什麼好處？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_11": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 3,
+    "options": [
+      "為了測試機體的轉向性能與靈活度",
+      "因為圖資系統發生錯誤導致直線路徑失效",
+      "為了配合攝像頭的拍攝角度需求",
+      "為了規避潛在威脅（如障礙、干擾區），最大化任務存活率"
+    ],
+    "questionText": "當最短路徑風險過高時，系統改走繞路的真正目的原因是什麼？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_12": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 3,
+    "options": [
+      "降低電池過熱導致空中斷電的風險",
+      "降低圖傳延遲導致畫面卡頓的風險",
+      "降低因定位誤差導致的撞擊、迷航或誤判禁飛區風險",
+      "降低無刷馬達因高速運轉而磨損的風險"
+    ],
+    "questionText": "若GPS出現漂移導致判斷不穩定，增加備援或檢查機制主要是為了降低哪種風險？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_13": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "總飛行距離通常會比直線路徑長",
+      "總飛行距離會變短，因為切西瓜",
+      "距離不變，但時間會顯著變短",
+      "距離會變成無限大，因為無法到達終點"
+    ],
+    "questionText": "在任務分段中，同一路徑轉彎次數增加，可能對距離造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_14": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "為了避開局部障礙物、高風險區或高成本區域（如強風區）",
+      "因為演算法偏好曲線飛行以展現性能",
+      "因為最短路徑通常GPS訊號最差",
+      "為了增加飛行樂趣與畫面豐富度"
+    ],
+    "questionText": "原因是什麼演算法不一定選擇距離最短的路線？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_15": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "路徑規劃會給予該區域極大的懲罰值（Penalty），迫使路徑繞行",
+      "系統會自動申請解鎖該區域並直接穿越",
+      "無人機會穿越該區域但自動關閉錄影功能",
+      "會導致演算法崩潰，無法計算任何路徑"
+    ],
+    "questionText": "將禁飛區視為高成本區域，對決策結果會產生什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_16": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 3,
+    "options": [
+      "最大化飛行速度與機動性",
+      "最小化總能量消耗（Total Energy Consumption）",
+      "最大化飛行高度以位能換取動能",
+      "最小化運算記憶體的使用量"
+    ],
+    "questionText": "若以耗電量當作路徑成本，代表系統希望在規劃時讓哪個量更小（或更大）？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_17": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "因需減速入彎再加速出彎，通常會增加總飛行時間",
+      "轉彎能利用離心力加速，減少總時間",
+      "對飛行時間完全沒有影響，只影響距離",
+      "會導致時間計算歸零重置"
+    ],
+    "questionText": "在任務分段中，同一路徑轉彎次數增加，可能對飛行時間造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_18": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 3,
+    "options": [
+      "希望讓飛行路徑盡量貼近障礙物以節省空間",
+      "希望完全忽略障礙物的存在",
+      "希望讓與障礙物的間距極大化，或保持在特定安全閾值之上",
+      "希望減少避障感測器的使用頻率"
+    ],
+    "questionText": "若以安全距離當作路徑成本，代表系統希望在規劃時讓哪個量更小（或更大）？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_19": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "因為該路線的綜合評分（Cost）較差，或陷入局部最佳解（Local Minima）",
+      "因為該路線顏色不好看，不符合使用者審美",
+      "因為該路線經過起飛點，會導致訊號干擾",
+      "因為系統隨機丟棄了一半的可行路徑"
+    ],
+    "questionText": "原因是什麼某些路線雖然可行，卻不被系統選擇？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_20": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 3,
+    "options": [
+      "機身顏色的顯眼程度",
+      "飛行時間、距離或預估耗能",
+      "操作員的心情指數",
+      "螺旋槳的品牌與價格"
+    ],
+    "questionText": "設計無人機的任務分段時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：訊號強度）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_21": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 3,
+    "options": [
+      "感測器的市場價格",
+      "測量值的誤差變異數（Variance）或殘差（Residual）",
+      "感測器的重量與體積",
+      "感測器的外觀設計"
+    ],
+    "questionText": "設計無人機的感測器融合時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：訊號強度）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_22": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 3,
+    "options": [
+      "地圖的解析度與更新率",
+      "路徑在螢幕上的顏色深度",
+      "與新發現障礙物的接近程度（Proximity）或碰撞風險",
+      "當時的雲層厚度"
+    ],
+    "questionText": "設計無人機的路徑重規劃時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：安全距離）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_23": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 3,
+    "options": [
+      "降低電池過充導致膨脹的風險",
+      "降低控制系統發散、姿態失穩或抗風失敗導致的墜機風險",
+      "降低相機過曝導致畫面全白的風險",
+      "降低記憶卡寫入錯誤的風險"
+    ],
+    "questionText": "若風向快速變化導致判斷不穩定，增加備援或檢查機制主要是為了降低哪種風險？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_24": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "改道繞行所需的額外時間或能量",
+      "遙控器的剩餘電量百分比",
+      "無人機機體的折舊率",
+      "散熱風扇的轉速"
+    ],
+    "questionText": "設計無人機的路徑重規劃時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：耗電量）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_25": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "通常無直接關聯，除非需進行垂直避障（3D Planning）",
+      "一定會導致高度大幅下降以獲得升力",
+      "一定會導致高度上升以避開亂流",
+      "會讓高度鎖定功能失效，改為氣壓定高"
+    ],
+    "questionText": "在路徑重規劃中，同一路徑轉彎次數增加，可能對高度變化造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_26": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "最小化總飛行路徑長度",
+      "最大化飛行距離以測試極限續航",
+      "保持距離恆定不變",
+      "完全忽略距離因素，只看時間"
+    ],
+    "questionText": "若以距離當作路徑成本，代表系統希望在規劃時讓哪個量更小（或更大）？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_27": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 3,
+    "options": [
+      "為了增加處理器的負載以測試穩定性",
+      "為了讓飛行軌跡看起來更具藝術感",
+      "確保無人機即時適應動態環境（Dynamic Environment）以避免碰撞",
+      "為了消耗記憶體空間以清除暫存"
+    ],
+    "questionText": "當環境突然改變時，需要即時重新計算路徑，這種設計最重要的目標是什麼？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_28": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "碰撞機率（Collision Probability）或與障礙物的距離倒數",
+      "障礙物的顏色與材質",
+      "障礙物的品牌與製造商",
+      "天空的亮度與雲量"
+    ],
+    "questionText": "設計無人機的避障規劃時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：風險分數）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_29": {
+    "correctOptionIndex": 3,
+    "difficultyLevel": 3,
+    "options": [
+      "會顯著縮短飛行時間",
+      "時間保持恆定，與轉彎無關",
+      "會讓時間倒流，增加容錯率",
+      "通常會延長飛行時間（因加減速與路徑增加）"
+    ],
+    "questionText": "在最省電路徑中，同一路徑轉彎次數增加，可能對飛行時間造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_30": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 3,
+    "options": [
+      "起飛點與降落點的直線距離",
+      "安全邊際（Safety Margin）或與最近障礙物的淨空距離",
+      "遙控器與無人機的直線距離",
+      "無人機與地心的距離"
+    ],
+    "questionText": "設計無人機的避障規劃時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：距離）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_31": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "任務完成所需的總時間",
+      "無人機的機身顏色",
+      "操作員的年齡",
+      "當天的日期"
+    ],
+    "questionText": "設計無人機的任務分段時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：距離）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_32": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 3,
+    "options": [
+      "為了增加無人機的飛行速度",
+      "修正路徑偏差以確保飛行安全",
+      "為了減少電池的消耗",
+      "為了測試感測器的極限"
+    ],
+    "questionText": "當感測器資料含噪聲時，需要即時重新計算路徑，這種設計最重要的目標是什麼？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_33": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "誤判導致的碰撞或墜機",
+      "電池過熱燃燒",
+      "遙控訊號被竊取",
+      "記憶卡容量不足"
+    ],
+    "questionText": "若偵測到新障礙物導致判斷不穩定，增加備援或檢查機制主要是為了降低哪種風險？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_34": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 3,
+    "options": [
+      "機身的碳纖維重量",
+      "螺旋槳的轉速",
+      "狀態估計的誤差值（如協方差）",
+      "電池的剩餘電壓"
+    ],
+    "questionText": "設計無人機的感測器融合時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：高度變化）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_35": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "障礙物的密集程度",
+      "起飛場地的草地長度",
+      "無人機的序號",
+      "操作手冊的頁數"
+    ],
+    "questionText": "設計無人機的風險評分時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：耗電量）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_36": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "轉彎次數數值會上升",
+      "轉彎次數會變成負值",
+      "轉彎次數完全不受影響",
+      "轉彎次數會自動歸零"
+    ],
+    "questionText": "在最省電路徑中，同一路徑轉彎次數增加，可能對轉彎次數造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_37": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 3,
+    "options": [
+      "機身外殼褪色的風險",
+      "定位偏差導致的撞擊風險",
+      "相機過熱的風險",
+      "遙控器按鍵失靈的風險"
+    ],
+    "questionText": "若感測器資料含噪聲導致判斷不穩定，增加備援或檢查機制主要是為了降低哪種風險？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_38": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "通常會導致風險分數提高",
+      "會讓風險分數歸零",
+      "風險分數不受影響",
+      "通常會降低風險分數"
+    ],
+    "questionText": "在路徑重規劃中，同一路徑轉彎次數增加，可能對風險分數造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_39": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "因機動性不確定，可能需增加安全緩衝區",
+      "可以完全移除安全距離",
+      "安全距離會變為負數",
+      "對安全距離毫無影響"
+    ],
+    "questionText": "在任務分段中，同一路徑轉彎次數增加，可能對安全距離造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_40": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 3,
+    "options": [
+      "無人機的品牌知名度",
+      "單位時間或距離的能量消耗",
+      "地圖的解析度",
+      "操作員的視力"
+    ],
+    "questionText": "設計無人機的最省電路徑時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：距離）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_41": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "當下的風速與亂流強度",
+      "記憶卡的存取速度",
+      "機身的貼紙數量",
+      "螺旋槳的顏色"
+    ],
+    "questionText": "設計無人機的風險評分時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：轉彎次數）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_42": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 3,
+    "options": [
+      "相機的光圈大小",
+      "起飛時間的秒數",
+      "GPS衛星的可見數量",
+      "馬達的生產批號"
+    ],
+    "questionText": "設計無人機的風險評分時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：訊號強度）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_43": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "可能因地形遮蔽導致訊號波動",
+      "訊號強度必定增強",
+      "訊號強度完全不受地形影響",
+      "會讓遙控器自動關機"
+    ],
+    "questionText": "在最短路徑中，同一路徑轉彎次數增加，可能對訊號強度造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_44": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "操作複雜度變高，風險可能增加",
+      "風險必定大幅降低",
+      "風險分數會變成負數",
+      "對飛行安全完全無影響"
+    ],
+    "questionText": "在最短路徑中，同一路徑轉彎次數增加，可能對風險分數造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_45": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "因頻繁加減速而增加耗電量",
+      "轉彎會產生電力回充",
+      "耗電量會顯著降低",
+      "耗電量保持恆定不變"
+    ],
+    "questionText": "在任務分段中，同一路徑轉彎次數增加，可能對耗電量造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_46": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "通常會延長總飛行時間",
+      "會大幅縮短飛行時間",
+      "飛行時間完全不受影響",
+      "會讓時間計算暫停"
+    ],
+    "questionText": "在避障規劃中，同一路徑轉彎次數增加，可能對飛行時間造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_47": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 3,
+    "options": [
+      "希望讓訊號強度越小越好",
+      "希望讓訊號強度越大越好",
+      "希望訊號強度保持為零",
+      "希望訊號強度隨機變化"
+    ],
+    "questionText": "若以訊號強度當作路徑成本，代表系統希望在規劃時讓哪個量更小（或更大）？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_48": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "可能因估計延遲需增加安全距離",
+      "可以完全移除安全距離",
+      "安全距離會自動縮減",
+      "對安全邊界無任何影響"
+    ],
+    "questionText": "在感測器融合中，同一路徑轉彎次數增加，可能對安全距離造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_49": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "可能為了繞行而減少不必要的爬升",
+      "必定導致高度劇烈震盪",
+      "高度變化會呈現指數成長",
+      "與高度變化完全互斥"
+    ],
+    "questionText": "在最省電路徑中，同一路徑轉彎次數增加，可能對高度變化造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_50": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "會增加返航所需的時間",
+      "能瞬間回到起點",
+      "會減少飛行時間",
+      "對電池續航力無影響"
+    ],
+    "questionText": "在返航策略中，同一路徑轉彎次數增加，可能對飛行時間造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_51": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "預測值與觀測值的殘差（誤差）",
+      "無人機的生產日期",
+      "螺旋槳的葉片數量",
+      "操作員的性別"
+    ],
+    "questionText": "設計無人機的感測器融合時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：轉彎次數）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_52": {
+    "correctOptionIndex": 1,
+    "difficultyLevel": 3,
+    "options": [
+      "無人機的折舊率",
+      "路徑的物理長度",
+      "雲層的覆蓋率",
+      "遙控器的按鍵數"
+    ],
+    "questionText": "設計無人機的最短路徑時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：風險分數）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_53": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "馬達運轉的總功耗",
+      "鏡頭的變焦倍率",
+      "機身的序號",
+      "SD卡的容量"
+    ],
+    "questionText": "設計無人機的最省電路徑時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：訊號強度）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_54": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "兩點之間的歐幾里得距離",
+      "電池的充電電壓",
+      "風速的變化率",
+      "機翼的材質"
+    ],
+    "questionText": "設計無人機的最短路徑時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：耗電量）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_55": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "複雜地形中，兩者通常會同時增加",
+      "兩者絕對呈現反比",
+      "轉彎必定導致高度固定",
+      "高度變化會自動歸零"
+    ],
+    "questionText": "在風險評分中，同一路徑轉彎次數增加，可能對高度變化造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_56": {
+    "correctOptionIndex": 2,
+    "difficultyLevel": 3,
+    "options": [
+      "GPS訊號的強弱",
+      "記憶卡的寫入速度",
+      "爬升所需的重力位能變化",
+      "機身的生產年份"
+    ],
+    "questionText": "設計無人機的最省電路徑時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：高度變化）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_57": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "完成任務所需的總能耗",
+      "操作員的午餐時間",
+      "無人機的顏色深淺",
+      "起飛場地的名稱"
+    ],
+    "questionText": "設計無人機的任務分段時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：飛行時間）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_58": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "偏離原路徑的程度",
+      "遙控器的按鍵數量",
+      "電池的生產批號",
+      "雲層的厚度"
+    ],
+    "questionText": "設計無人機的路徑重規劃時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：訊號強度）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_59": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "因機動調整而增加飛行時間",
+      "會讓時間倒流",
+      "飛行時間會縮短一半",
+      "與飛行時間毫無關聯"
+    ],
+    "questionText": "在感測器融合中，同一路徑轉彎次數增加，可能對飛行時間造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_60": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "希望讓高度變化越小越好",
+      "希望高度變化越大越好",
+      "希望高度無限上升",
+      "希望高度保持在負值"
+    ],
+    "questionText": "若以高度變化當作路徑成本，代表系統希望在規劃時讓哪個量更小（或更大）？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_61": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "可能因天線角度改變導致訊號波動",
+      "訊號強度必定會持續增強",
+      "訊號會完全中斷",
+      "訊號強度不受任何影響"
+    ],
+    "questionText": "在任務分段中，同一路徑轉彎次數增加，可能對訊號強度造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_62": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "確保能安全返航或降落",
+      "為了加快飛行速度",
+      "為了增加拍攝畫面",
+      "為了消耗剩餘電力"
+    ],
+    "questionText": "當電量低於門檻值時，需要即時重新計算路徑，這種設計最重要的目標是什麼？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_63": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "因加減速與姿態調整增加耗電",
+      "耗電量會顯著降低",
+      "耗電量完全不受影響",
+      "會產生電力回充效果"
+    ],
+    "questionText": "在路徑重規劃中，同一路徑轉彎次數增加，可能對耗電量造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_64": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "可能因頻繁轉彎而增加總耗電",
+      "耗電量必定減少",
+      "轉彎次數與耗電量無關",
+      "耗電量會保持恆定"
+    ],
+    "questionText": "在最短路徑中，同一路徑轉彎次數增加，可能對耗電量造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_65": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "預估的總能量消耗",
+      "無人機的機身顏色",
+      "記憶卡的剩餘容量",
+      "操作員的姓名"
+    ],
+    "questionText": "設計無人機的最省電路徑時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：安全距離）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_66": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "可能需增加緩衝空間以防操控誤差",
+      "安全距離可以完全忽略",
+      "安全距離會自動歸零",
+      "對安全距離完全無影響"
+    ],
+    "questionText": "在最省電路徑中，同一路徑轉彎次數增加，可能對安全距離造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_67": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "確保飛行穩定性與路徑可行性",
+      "為了增加飛行樂趣",
+      "為了展示運算能力",
+      "為了讓無人機隨風漂流"
+    ],
+    "questionText": "當風向快速變化時，需要即時重新計算路徑，這種設計最重要的目標是什麼？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_68": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "爬升高度與風阻係數",
+      "遙控器的電池電量",
+      "相機的解析度",
+      "起飛地點的經緯度"
+    ],
+    "questionText": "設計無人機的最省電路徑時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：耗電量）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_69": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "因軌跡複雜度提高需預留更多空間",
+      "安全距離可以縮短至零",
+      "與安全距離毫無關聯",
+      "會讓障礙物自動消失"
+    ],
+    "questionText": "在最短路徑中，同一路徑轉彎次數增加，可能對安全距離造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_70": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "通常會提高操作複雜度與風險評分",
+      "風險分數會降至最低",
+      "風險分數完全不受影響",
+      "會讓返航變成零風險"
+    ],
+    "questionText": "在返航策略中，同一路徑轉彎次數增加，可能對風險分數造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_71": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "總飛行距離通常會大於直線距離",
+      "總距離會變短",
+      "距離保持不變",
+      "距離會變成負數"
+    ],
+    "questionText": "在最短路徑中，同一路徑轉彎次數增加，可能對距離造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_72": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "障礙物距離與人口密度",
+      "無人機的購買價格",
+      "電池的顏色",
+      "操作員的喜好"
+    ],
+    "questionText": "設計無人機的風險評分時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：安全距離）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_73": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "返航所需的剩餘電量與時間",
+      "起飛點的草地顏色",
+      "無人機的型號名稱",
+      "相機的快門速度"
+    ],
+    "questionText": "設計無人機的返航策略時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：風險分數）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_74": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "希望讓累積的風險分數越小越好",
+      "希望風險分數越高越好",
+      "希望風險分數保持無限大",
+      "希望風險分數隨機波動"
+    ],
+    "questionText": "若以風險分數當作路徑成本，代表系統希望在規劃時讓哪個量更小（或更大）？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_75": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "感測數值的誤差或雜訊變異數",
+      "無人機的飛行高度限制",
+      "螺旋槳的材質",
+      "電池的充電次數"
+    ],
+    "questionText": "設計無人機的感測器融合時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：風險分數）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_76": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "希望盡量減少路徑中的轉彎次數",
+      "希望轉彎次數越多越好",
+      "希望轉彎次數保持固定",
+      "希望轉彎次數為負值"
+    ],
+    "questionText": "若以轉彎次數當作路徑成本，代表系統希望在規劃時讓哪個量更小（或更大）？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_77": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "估計狀態與量測值之間的殘差",
+      "總飛行時間長度",
+      "機身的重量",
+      "遙控器的訊號頻率"
+    ],
+    "questionText": "設計無人機的感測器融合時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：飛行時間）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_78": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "該分段任務的執行時間或能耗",
+      "無人機的廠牌",
+      "當天的氣溫",
+      "安全距離的定義文字"
+    ],
+    "questionText": "設計無人機的任務分段時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：安全距離）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_79": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "與障礙物的接近程度（懲罰項）",
+      "電池的總電量",
+      "避障感測器的價格",
+      "障礙物的顏色"
+    ],
+    "questionText": "設計無人機的避障規劃時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：耗電量）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_80": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "偏離原定路徑的程度",
+      "風險分數的定義",
+      "重規劃演算法的名稱",
+      "操作員的心情"
+    ],
+    "questionText": "設計無人機的路徑重規劃時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：風險分數）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_81": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "完成該段任務所需的資源消耗",
+      "無人機的序號",
+      "任務的名稱",
+      "分段的數量"
+    ],
+    "questionText": "設計無人機的任務分段時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：耗電量）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_82": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "修正定位誤差以防誤入禁區或撞擊",
+      "為了節省電池電力",
+      "為了測試GPS接收器",
+      "為了增加飛行路徑長度"
+    ],
+    "questionText": "當GPS出現漂移時，需要即時重新計算路徑，這種設計最重要的目標是什麼？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_83": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "規避碰撞並尋找可行的新路徑",
+      "為了停下來拍照",
+      "為了嚇跑障礙物",
+      "為了加速撞擊"
+    ],
+    "questionText": "當偵測到新障礙物時，需要即時重新計算路徑，這種設計最重要的目標是什麼？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_84": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "新路徑的平滑度與轉彎數量",
+      "舊路徑的顏色",
+      "地圖的更新日期",
+      "無人機的馬達轉速"
+    ],
+    "questionText": "設計無人機的路徑重規劃時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：轉彎次數）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_85": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "可能因閃避立體障礙物而增加高度變動",
+      "高度變化必定歸零",
+      "高度永遠保持不變",
+      "與高度變化完全無關"
+    ],
+    "questionText": "在最短路徑中，同一路徑轉彎次數增加，可能對高度變化造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_86": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "爬升或下降所需的額外能耗",
+      "高度計的品牌",
+      "氣壓計的讀數",
+      "雲層的高度"
+    ],
+    "questionText": "設計無人機的路徑重規劃時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：高度變化）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_87": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "路徑的複雜度與轉彎消耗",
+      "返航點的經緯度",
+      "降落墊的形狀",
+      "遙控器的剩餘電量"
+    ],
+    "questionText": "設計無人機的返航策略時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：轉彎次數）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_88": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "系統失效或決策錯誤的風險",
+      "電池充電過慢的風險",
+      "拍攝畫面模糊的風險",
+      "馬達噪音過大的風險"
+    ],
+    "questionText": "若環境突然改變導致判斷不穩定，增加備援或檢查機制主要是為了降低哪種風險？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_89": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "離禁飛區或危險設施的距離",
+      "起飛點的距離",
+      "與雲層的距離",
+      "兩架無人機的通訊距離"
+    ],
+    "questionText": "設計無人機的風險評分時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：距離）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_90": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "路徑長度與安全緩衝區的權重",
+      "地圖的價格",
+      "操作員的年薪",
+      "無人機的保險費"
+    ],
+    "questionText": "設計無人機的最短路徑時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：安全距離）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_91": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "因操控難度提升而增加風險分數",
+      "風險分數會變為負數",
+      "風險分數必定歸零",
+      "對風險分數無任何影響"
+    ],
+    "questionText": "在任務分段中，同一路徑轉彎次數增加，可能對風險分數造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_92": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "動力中斷導致墜機的風險",
+      "記憶卡寫入錯誤的風險",
+      "鏡頭起霧的風險",
+      "螺旋槳結冰的風險"
+    ],
+    "questionText": "若電量低於門檻值導致判斷不穩定，增加備援或檢查機制主要是為了降低哪種風險？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_93": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "新路徑的總飛行距離",
+      "遙控器的通訊距離",
+      "與最近機場的直線距離",
+      "地圖的比例尺"
+    ],
+    "questionText": "設計無人機的路徑重規劃時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：距離）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_94": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "暴露在危險環境下的持續時間",
+      "總飛行時間",
+      "電池充電時間",
+      "影片錄製時間"
+    ],
+    "questionText": "設計無人機的風險評分時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：飛行時間）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_95": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "若需越過障礙轉彎，高度變化會增加",
+      "高度變化完全停止",
+      "高度會自動鎖定",
+      "與高度變化完全無關"
+    ],
+    "questionText": "在任務分段中，同一路徑轉彎次數增加，可能對高度變化造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_96": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "通常會因減速轉彎而延長飛行時間",
+      "飛行時間會縮短",
+      "飛行時間保持不變",
+      "飛行時間會暫停"
+    ],
+    "questionText": "在風險評分中，同一路徑轉彎次數增加，可能對飛行時間造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_97": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "可能改採3D繞行導致高度改變",
+      "高度絕對不會改變",
+      "高度變化會歸零",
+      "高度會呈現負值"
+    ],
+    "questionText": "在避障規劃中，同一路徑轉彎次數增加，可能對高度變化造成什麼影響？",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_98": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "規避動作所需的急轉彎數量",
+      "障礙物的轉動慣量",
+      "螺旋槳的轉速",
+      "操作員的轉身次數"
+    ],
+    "questionText": "設計無人機的避障規劃時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：轉彎次數）",
+    "reward": 3,
+    "type": "quiz"
+  },
+  "qL3_99": {
+    "correctOptionIndex": 0,
+    "difficultyLevel": 3,
+    "options": [
+      "返航路徑與障礙物的最小安全距離",
+      "返航點的停車位距離",
+      "遙控器的藍芽距離",
+      "無人機的視距外距離"
+    ],
+    "questionText": "設計無人機的返航策略時，通常要先定義成本（cost），下列哪個最可能被用作成本？（例：安全距離）",
+    "reward": 3,
+    "type": "quiz"
+  }
+}
