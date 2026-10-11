@@ -1,0 +1,391 @@
+{
+  "baseline_commit": "80687539ec416f47762ee26649beb8cb682e1d74",
+  "original_tracked_files": 1615,
+  "moved_file_count": 64,
+  "moves": [
+    {
+      "original_path": "Assets/Scripts/CameraConfirmPanel.cs",
+      "path": "Assets/Scripts/UI/CameraConfirmPanel.cs",
+      "size": 1156,
+      "sha256": "11350f766bac60294ca90f7eb89720f6f02828e7e783077b1762f084f09d1cd6"
+    },
+    {
+      "original_path": "Assets/Scripts/CameraConfirmPanel.cs.meta",
+      "path": "Assets/Scripts/UI/CameraConfirmPanel.cs.meta",
+      "size": 254,
+      "sha256": "80aba1dac4f3ad17783d9577a49af820d9bf3d81abe901a654d7864dd9951a70"
+    },
+    {
+      "original_path": "Assets/Scripts/ConfirmDialog.cs",
+      "path": "Assets/Scripts/UI/ConfirmDialog.cs",
+      "size": 1801,
+      "sha256": "dc2094341ab72bcd20e91d5bac25b4d2392070018b1ddafb2d237a337a73e095"
+    },
+    {
+      "original_path": "Assets/Scripts/ConfirmDialog.cs.meta",
+      "path": "Assets/Scripts/UI/ConfirmDialog.cs.meta",
+      "size": 254,
+      "sha256": "71345a2eb0e14f3dbce4c28395dd89bc5ae264d21810fcc2b8c76fb00ca22f77"
+    },
+    {
+      "original_path": "Assets/Scripts/DataModels.cs",
+      "path": "Assets/Scripts/Models/DataModels.cs",
+      "size": 683,
+      "sha256": "e17c1f15d4e926a2f2e31b382411460a444d4e6f0dc3cf30a40f764330f5305c"
+    },
+    {
+      "original_path": "Assets/Scripts/DataModels.cs.meta",
+      "path": "Assets/Scripts/Models/DataModels.cs.meta",
+      "size": 254,
+      "sha256": "251a9af5eede31409f4d76a3ce42b2257d263ba7b89a9b5f0c4341c8a0f5a030"
+    },
+    {
+      "original_path": "Assets/Scripts/FirebaseManager.cs",
+      "path": "Assets/Scripts/Infrastructure/Firebase/FirebaseManager.cs",
+      "size": 4187,
+      "sha256": "1c14304c5f1453ad3bcd2416c291ba5cdb85a9ec4f1bb672a23bb882f5d3bba0"
+    },
+    {
+      "original_path": "Assets/Scripts/FirebaseManager.cs.meta",
+      "path": "Assets/Scripts/Infrastructure/Firebase/FirebaseManager.cs.meta",
+      "size": 254,
+      "sha256": "4cfff0518a217caf7e1d921464f6eb4d8a21cb56a6178ba7297daaba13bef605"
+    },
+    {
+      "original_path": "Assets/Scripts/GlobalVariables.cs",
+      "path": "Assets/Scripts/Core/GlobalVariables.cs",
+      "size": 4896,
+      "sha256": "ed320d74a46d1a4088f8bf1f1bc01df69984d8c800ebfb7906272637ad821830"
+    },
+    {
+      "original_path": "Assets/Scripts/GlobalVariables.cs.meta",
+      "path": "Assets/Scripts/Core/GlobalVariables.cs.meta",
+      "size": 254,
+      "sha256": "aa17f9232cf4c24fe670a609d110959b28dd33a57f4a864b0bdd56f7f1d2a63a"
+    },
+    {
+      "original_path": "Assets/Scripts/LobbyManager.cs",
+      "path": "Assets/Scripts/Features/Lobby/LobbyManager.cs",
+      "size": 6943,
+      "sha256": "a89288a524f877c3fd348bb18cb7730c75a34ddf92b8f850f1902cb1481814e4"
+    },
+    {
+      "original_path": "Assets/Scripts/LobbyManager.cs.meta",
+      "path": "Assets/Scripts/Features/Lobby/LobbyManager.cs.meta",
+      "size": 254,
+      "sha256": "e0d917bfb444c440706028bc35ccf422cd56f1dee107e7c0605e90e9f900943e"
+    },
+    {
+      "original_path": "Assets/Scripts/QRScanManager.cs",
+      "path": "Assets/Scripts/Features/Scanning/QRScanManager.cs",
+      "size": 7265,
+      "sha256": "962cf58bc8d033cb76c5d263cdd8d07a220ca09a50300f5283a752862383cb17"
+    },
+    {
+      "original_path": "Assets/Scripts/QRScanManager.cs.meta",
+      "path": "Assets/Scripts/Features/Scanning/QRScanManager.cs.meta",
+      "size": 254,
+      "sha256": "9877056692df54c223272536ef747a6f31e9c1a27bdc184b8fd8dc40ac69951f"
+    },
+    {
+      "original_path": "Assets/Scripts/Question.cs",
+      "path": "Assets/Scripts/Models/Question.cs",
+      "size": 638,
+      "sha256": "a353e804f714f472eb02058f461456089ea44ada7d9797f7160ed66a9707133e"
+    },
+    {
+      "original_path": "Assets/Scripts/Question.cs.meta",
+      "path": "Assets/Scripts/Models/Question.cs.meta",
+      "size": 254,
+      "sha256": "3cf6a7586f821d44898582e9eed51fb5de5fa55b5ea65f897bd31ffeb80aefc5"
+    },
+    {
+      "original_path": "Assets/Scripts/QuestionData.cs",
+      "path": "Assets/Scripts/Models/QuestionData.cs",
+      "size": 786,
+      "sha256": "63989c55641ead1fea8cb8062914474eaa9503a5395ec7e8833ee1b075779219"
+    },
+    {
+      "original_path": "Assets/Scripts/QuestionData.cs.meta",
+      "path": "Assets/Scripts/Models/QuestionData.cs.meta",
+      "size": 254,
+      "sha256": "0e1ab5aab8af301709daa43d5402d7352d4a89671861b541f99e03f4df9357df"
+    },
+    {
+      "original_path": "Assets/Scripts/QuizManager.cs",
+      "path": "Assets/Scripts/Features/Quiz/QuizManager.cs",
+      "size": 12899,
+      "sha256": "117139b8f7621013830c1110c9b01f629e60ff4b92aa9efc93d231d26223afff"
+    },
+    {
+      "original_path": "Assets/Scripts/QuizManager.cs.meta",
+      "path": "Assets/Scripts/Features/Quiz/QuizManager.cs.meta",
+      "size": 254,
+      "sha256": "e4ce3c6b4e73461aa92ae689746473e53e5a0ea2bb4f9f05de9075efcc426dd6"
+    },
+    {
+      "original_path": "Assets/Scripts/ResultManager.cs",
+      "path": "Assets/Scripts/Features/Results/ResultManager.cs",
+      "size": 8554,
+      "sha256": "eaa9959c13a155176b4a29b0c054741ecd542652276350652bbe67a57964ad97"
+    },
+    {
+      "original_path": "Assets/Scripts/ResultManager.cs.meta",
+      "path": "Assets/Scripts/Features/Results/ResultManager.cs.meta",
+      "size": 254,
+      "sha256": "65c4d9eea493cc1e24cea9ebf3d9cbf14f21dab2a13124e97487d41dac26b44b"
+    },
+    {
+      "original_path": "Assets/Scripts/ScanSceneController.cs",
+      "path": "Assets/Scripts/Features/Scanning/ScanSceneController.cs",
+      "size": 4113,
+      "sha256": "68616d68a35a11f6658b8192088454d135622efd1666f422ddcd4ef7bf782208"
+    },
+    {
+      "original_path": "Assets/Scripts/ScanSceneController.cs.meta",
+      "path": "Assets/Scripts/Features/Scanning/ScanSceneController.cs.meta",
+      "size": 254,
+      "sha256": "2162cd23bbcb7f87d5ec2480bbb59ebc1738fa2e01da1001e53d1f47c6248f2f"
+    },
+    {
+      "original_path": "Assets/Scripts/SelectPlayerManager.cs",
+      "path": "Assets/Scripts/Features/Players/SelectPlayerManager.cs",
+      "size": 4309,
+      "sha256": "9c5a9841f01ec329d4b2a2ea215a7e72ea6f84ac6af6db93c172e9f277c5b1ec"
+    },
+    {
+      "original_path": "Assets/Scripts/SelectPlayerManager.cs.meta",
+      "path": "Assets/Scripts/Features/Players/SelectPlayerManager.cs.meta",
+      "size": 254,
+      "sha256": "74c29f9e10e4d85c682fe63ba8ae2ec72e944981d2252e0216e165d7ccece61f"
+    },
+    {
+      "original_path": "PunishmentGame_BurstDebugInformation_DoNotShip/tempburstlibs/armeabi-v7a/lib_burst_generated.txt",
+      "path": "artifacts/burst-debug/PunishmentGame_BurstDebugInformation_DoNotShip/tempburstlibs/armeabi-v7a/lib_burst_generated.txt",
+      "size": 22681,
+      "sha256": "029b5ac1734ca48bc52962e54690f4d2b94d195e0aa95865a30608f7cd02b0e5"
+    },
+    {
+      "original_path": "drone_quiz.json",
+      "path": "data/question-banks/drone_quiz.json",
+      "size": 6025,
+      "sha256": "24005265d122b89284917b8e8ca701c2e804ae1fad47fb83b9001463840b6a40"
+    },
+    {
+      "original_path": "國科會/TANET 海報論文/開發以學習人工智慧路徑演算法之無人機教育桌遊系統及認知負荷與心流狀態初探.docx",
+      "path": "國科會/04_研究成果/02_TANET論文/01_原稿/開發以學習人工智慧路徑演算法之無人機教育桌遊系統及認知負荷與心流狀態初探.docx",
+      "size": 232073,
+      "sha256": "5020811d29c6b69174527f22f1f980dd466421b7c2e6432c374b5cc1a460139d"
+    },
+    {
+      "original_path": "國科會/TANET 海報論文/開發以學習人工智慧路徑演算法之無人機教育桌遊系統及認知負荷與心流狀態初探.pdf",
+      "path": "國科會/04_研究成果/02_TANET論文/01_原稿/開發以學習人工智慧路徑演算法之無人機教育桌遊系統及認知負荷與心流狀態初探.pdf",
+      "size": 453226,
+      "sha256": "981623c347684293da523b34854c615301de8ce0c4f07bf96cbd47c5560e7fc0"
+    },
+    {
+      "original_path": "國科會/TANET 海報論文/開發以學習人工智慧路徑演算法之無人機教育桌遊系統及認知負荷與心流狀態初探_朱志明_更改版.docx",
+      "path": "國科會/04_研究成果/02_TANET論文/02_修訂稿/開發以學習人工智慧路徑演算法之無人機教育桌遊系統及認知負荷與心流狀態初探_朱志明_更改版.docx",
+      "size": 237855,
+      "sha256": "cf43b848a96b0619929f319c723f6e7a9f8a163a884f108285c65ca5c423b0ac"
+    },
+    {
+      "original_path": "國科會/TANET 海報論文/開發以學習人工智慧路徑演算法之無人機教育桌遊系統及認知負荷與心流狀態初探_朱志明_更改版.pdf",
+      "path": "國科會/04_研究成果/02_TANET論文/02_修訂稿/開發以學習人工智慧路徑演算法之無人機教育桌遊系統及認知負荷與心流狀態初探_朱志明_更改版.pdf",
+      "size": 489874,
+      "sha256": "1bea9aa924f1ace35da98c7f96a1902b6984ac7840c070506b1f50ab2b0d13c0"
+    },
+    {
+      "original_path": "國科會/修改後計畫/冬令營申請書.docx",
+      "path": "國科會/02_活動與教材/01_活動設計/其他課程申請/冬令營申請書.docx",
+      "size": 240838,
+      "sha256": "7f7e962fb37f9a5783534a6f44563ec771998c3530cf7675fa522958e1023f19"
+    },
+    {
+      "original_path": "國科會/修改後計畫/原本國科會計畫.pdf",
+      "path": "國科會/01_計畫與申請/01_研究計畫/02_修訂資料/參照原稿/原本國科會計畫.pdf",
+      "size": 437432,
+      "sha256": "dff023c5ed415046f82a187a066ecf407ebace79cc634310cd59566d3e67092b"
+    },
+    {
+      "original_path": "國科會/修改後計畫/學長桌遊計畫.pdf",
+      "path": "國科會/01_計畫與申請/03_參考專題/02_修改後計畫目錄留存/學長桌遊計畫.pdf",
+      "size": 2230079,
+      "sha256": "379bbcf024943aabf218288098c67b70dd1889a9e49ea19f9b14297160a40da9"
+    },
+    {
+      "original_path": "國科會/修改後計畫/更改後國科會計畫.docx",
+      "path": "國科會/01_計畫與申請/01_研究計畫/02_修訂資料/更改後國科會計畫.docx",
+      "size": 18763,
+      "sha256": "96d0ebc472c5db3f3ff7ddacb9e7c470f3cf70d0514d54153b1504371bfe19b1"
+    },
+    {
+      "original_path": "國科會/冬令營/前測問卷數據檢測.docx",
+      "path": "國科會/03_資料與分析/01_前後測問卷/01_前測/前測問卷數據檢測.docx",
+      "size": 57744,
+      "sha256": "843e0e18679b3aef112c9491f35a86b07faf8a8b1dbc3338531d25a291571772"
+    },
+    {
+      "original_path": "國科會/冬令營/前測問卷數據檢測.pdf",
+      "path": "國科會/03_資料與分析/01_前後測問卷/01_前測/前測問卷數據檢測.pdf",
+      "size": 401302,
+      "sha256": "9b90979d15dee491b8b815b731042c0894c05fadca621625788ad3871475c89f"
+    },
+    {
+      "original_path": "國科會/冬令營/國家科學及技術委員會專題研究計畫報告撰寫格式.odt",
+      "path": "國科會/06_寫作範本/01_成果報告/國家科學及技術委員會專題研究計畫報告撰寫格式.odt",
+      "size": 35400,
+      "sha256": "bd788be5c295074783dc7908fb668c80cb5e2136ef6a6e589221c556a56748af"
+    },
+    {
+      "original_path": "國科會/冬令營/大專學生研究計畫成果報告_初檔.docx",
+      "path": "國科會/04_研究成果/01_成果報告/01_初稿/大專學生研究計畫成果報告_初檔.docx",
+      "size": 6371496,
+      "sha256": "42f2061c9a6b08739e02207ba4f8cc110eed8a768d342b21d2c4b5cae0509552"
+    },
+    {
+      "original_path": "國科會/冬令營/大專學生研究計畫成果報告_初檔.pdf",
+      "path": "國科會/04_研究成果/01_成果報告/01_初稿/大專學生研究計畫成果報告_初檔.pdf",
+      "size": 1494214,
+      "sha256": "544499e940f208609dda0083b33568f1fb35a84b2d8d95c51fd69a1428f2e017"
+    },
+    {
+      "original_path": "國科會/冬令營/大專生研究計畫成果報告撰寫格式.doc",
+      "path": "國科會/06_寫作範本/01_成果報告/大專生研究計畫成果報告撰寫格式.doc",
+      "size": 171520,
+      "sha256": "e9e1842a2b82d663665e4ff68abf0703030e481e27ba038b4ee6cdc69e581465"
+    },
+    {
+      "original_path": "國科會/冬令營/學位論文格式參考.pdf",
+      "path": "國科會/06_寫作範本/02_學位論文/學位論文格式參考.pdf",
+      "size": 458022,
+      "sha256": "ac70d0e504dfaebeb4c2ccc9ff390f7eae036bf204f5ec93f091e02c1e6463ee"
+    },
+    {
+      "original_path": "國科會/冬令營/學生桌遊答題狀況.docx",
+      "path": "國科會/03_資料與分析/02_答題紀錄/學生桌遊答題狀況.docx",
+      "size": 30315,
+      "sha256": "d1be0793b6a0974d06f40fbdefaa5788a574c10f75d2f4918deb5045b0362450"
+    },
+    {
+      "original_path": "國科會/冬令營/後測問卷數據檢測.docx",
+      "path": "國科會/03_資料與分析/01_前後測問卷/02_後測/後測問卷數據檢測.docx",
+      "size": 72896,
+      "sha256": "62f82b90d4eaf42030f8129946d5caadfd881f6f1bedb4a38c28a730a9a81973"
+    },
+    {
+      "original_path": "國科會/冬令營/後測問卷數據檢測.pdf",
+      "path": "國科會/03_資料與分析/01_前後測問卷/02_後測/後測問卷數據檢測.pdf",
+      "size": 535622,
+      "sha256": "c931b8d4f6984d760ad4f7080a2a906b1bce76127f6a1e4e030809bb5fdb3cf1"
+    },
+    {
+      "original_path": "國科會/冬令營/成果檔案.json",
+      "path": "國科會/03_資料與分析/02_答題紀錄/成果檔案.json",
+      "size": 28788,
+      "sha256": "29261bec20f49995e8ce4e4b8e2cc1917ef63b1bcbbeebed28b917c3fc42a436"
+    },
+    {
+      "original_path": "國科會/冬令營/桌遊流程.pdf",
+      "path": "國科會/02_活動與教材/01_活動設計/桌遊流程/桌遊流程.pdf",
+      "size": 7892288,
+      "sha256": "ed537718a6a58efb51e352367d873cc8ed4e43178147fe38b8582fc18429393e"
+    },
+    {
+      "original_path": "國科會/冬令營/研究計畫內容：開發以學習人工智慧路徑演算法之無人機.pdf",
+      "path": "國科會/02_活動與教材/01_活動設計/研究計畫參照/研究計畫內容：開發以學習人工智慧路徑演算法之無人機.pdf",
+      "size": 437432,
+      "sha256": "dff023c5ed415046f82a187a066ecf407ebace79cc634310cd59566d3e67092b"
+    },
+    {
+      "original_path": "國科會/冬令營/題目.docx",
+      "path": "國科會/02_活動與教材/02_題庫/題目.docx",
+      "size": 88521,
+      "sha256": "6a86e354e2611c39b8352633707fd5dcf4c937f75ad8e40b034c6a6c6706e6ff"
+    },
+    {
+      "original_path": "國科會/冬令營/題目.json",
+      "path": "國科會/02_活動與教材/02_題庫/題目.json",
+      "size": 123267,
+      "sha256": "7731e4c8b550496f6f8cd5b7f8a6d81ca52e019e39dd704cdbf610818e55ba7b"
+    },
+    {
+      "original_path": "國科會/原計畫/學長桌遊計畫.docx",
+      "path": "國科會/01_計畫與申請/03_參考專題/01_原計畫目錄留存/學長桌遊計畫.docx",
+      "size": 4554792,
+      "sha256": "d4a0fe4e8b6d76e024cbdd4043ee2968de5e4b92a348ce5c588b4cf0089c87ad"
+    },
+    {
+      "original_path": "國科會/原計畫/學長桌遊計畫.pdf",
+      "path": "國科會/01_計畫與申請/03_參考專題/01_原計畫目錄留存/學長桌遊計畫.pdf",
+      "size": 2230079,
+      "sha256": "379bbcf024943aabf218288098c67b70dd1889a9e49ea19f9b14297160a40da9"
+    },
+    {
+      "original_path": "國科會/原計畫/研究計畫內容：開發以學習人工智慧路徑演算法之無人機.pdf",
+      "path": "國科會/01_計畫與申請/01_研究計畫/01_原始計畫/研究計畫內容：開發以學習人工智慧路徑演算法之無人機.pdf",
+      "size": 437432,
+      "sha256": "dff023c5ed415046f82a187a066ecf407ebace79cc634310cd59566d3e67092b"
+    },
+    {
+      "original_path": "國科會/國科會參考論文/人工智慧在行動：使用生成人工智慧創建基於多媒體專案的評估時學生的看法變化.pdf",
+      "path": "國科會/05_參考文獻/01_生成式AI與評量/人工智慧在行動：使用生成人工智慧創建基於多媒體專案的評估時學生的看法變化.pdf",
+      "size": 978486,
+      "sha256": "f33aec4ccb24ba10d033f59679dc3c4804454555520d9b0a9f19e9ce8f8a7928"
+    },
+    {
+      "original_path": "國科會/國科會參考論文/利用人工智慧與教師協作評分方法的力量：基於主題的半開放式多部分問題的有效評分.pdf",
+      "path": "國科會/05_參考文獻/01_生成式AI與評量/利用人工智慧與教師協作評分方法的力量：基於主題的半開放式多部分問題的有效評分.pdf",
+      "size": 1964895,
+      "sha256": "15362530b445d5975d4736b4266c1730dc5b554c3500fc96d9c3e79859c87f1c"
+    },
+    {
+      "original_path": "國科會/國科會參考論文/國科會計畫.pdf",
+      "path": "國科會/01_計畫與申請/01_研究計畫/03_來源副本/原參考論文目錄/國科會計畫.pdf",
+      "size": 437432,
+      "sha256": "dff023c5ed415046f82a187a066ecf407ebace79cc634310cd59566d3e67092b"
+    },
+    {
+      "original_path": "國科會/國科會參考論文/基於人工智慧的學習內容產生和學習路徑增強，以提高學習者的參與度.pdf",
+      "path": "國科會/05_參考文獻/02_AI學習內容與路徑/基於人工智慧的學習內容產生和學習路徑增強，以提高學習者的參與度.pdf",
+      "size": 12591785,
+      "sha256": "2436632e3eab7aedcecfc31d5d7615998b9d6e952b15a344ce548b28e4eb58e3"
+    },
+    {
+      "original_path": "國科會/國科會參考論文/課堂遊戲化：檢視遊戲化測驗對學生學習的影響.pdf",
+      "path": "國科會/05_參考文獻/03_遊戲化與學習/課堂遊戲化：檢視遊戲化測驗對學生學習的影響.pdf",
+      "size": 854226,
+      "sha256": "5adf00c82ed40caa752ea7af41926b4e8294f5653b8df25a427757fd7139b355"
+    },
+    {
+      "original_path": "國科會/國科會參考論文/透過遊戲化的合作學習來提高社會研究課堂的創造性解決問題能力和學習動機.pdf",
+      "path": "國科會/05_參考文獻/03_遊戲化與學習/透過遊戲化的合作學習來提高社會研究課堂的創造性解決問題能力和學習動機.pdf",
+      "size": 996557,
+      "sha256": "5eb386b51f65b4379de7cb2673a2e7f1994761be01fa1e35b78def2a8ac9332e"
+    },
+    {
+      "original_path": "國科會/國科會參考論文/遊戲化行動學習模式在會計教育學生學習成果評估的設計研究.pdf",
+      "path": "國科會/05_參考文獻/03_遊戲化與學習/遊戲化行動學習模式在會計教育學生學習成果評估的設計研究.pdf",
+      "size": 2854623,
+      "sha256": "740deac557fdf288c3c43b09ce0f12f57922ac61665c5c7fcd848de001e53850"
+    },
+    {
+      "original_path": "國科會/計畫申請案/指導教授初評意見表(C804).pdf",
+      "path": "國科會/01_計畫與申請/02_申請表件/指導教授初評意見表(C804).pdf",
+      "size": 98615,
+      "sha256": "4eb3e90ab7d0a93125ed40ccf6f85de8d13fc420fc197249d224290d37ec5536"
+    },
+    {
+      "original_path": "國科會/計畫申請案/綜合資料表(C801).pdf",
+      "path": "國科會/01_計畫與申請/02_申請表件/綜合資料表(C801).pdf",
+      "size": 57330,
+      "sha256": "02d881073e7981bc6c39eeea977462f28125f2dabf515f6046bd84f7a2e586f1"
+    },
+    {
+      "original_path": "國科會/計畫申請案/耗材、物品、圖書及雜項費用明細表(C803).pdf",
+      "path": "國科會/01_計畫與申請/02_申請表件/耗材、物品、圖書及雜項費用明細表(C803).pdf",
+      "size": 71675,
+      "sha256": "6df862a4ceec2c8e238fa4c7987d8a7c522b88f229d7b66910a175f7def98a77"
+    }
+  ]
+}

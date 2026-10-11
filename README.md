@@ -1,101 +1,66 @@
-# PunishmentGame (Quiz Game)
+# DroneGame 無人機教育桌遊研究專案
 
-這是一個基於 Unity 開發的多人問答遊戲專案，結合了 Firebase Realtime Database 進行題目管理與數據記錄，並使用 XCharts 進行結果視覺化。
+此儲存庫整合無人機教育桌遊的 Unity 問答應用與國科會研究資料。應用以 QR Code 選擇難度、從 Firebase 載入題目並記錄作答；研究資料依計畫、活動、資料分析與成果的順序編排。
 
-## 專案簡介
+## 從這裡開始
 
-此專案主要設計用於課堂或團體活動中的問答環節。玩家（學生）在遊戲開始前輸入名字，系統會將遊戲場次與玩家資訊上傳至 Firebase。遊戲過程中，題目會從雲端即時載入，玩家輪流或共同答題，系統會記錄答題正確率與作答時間。
+| 目的 | 入口 |
+| --- | --- |
+| 閱讀研究計畫、教材與論文 | [國科會研究資料總覽](國科會/README.md) |
+| 開啟與設定遊戲 | [環境設定與操作流程](docs/setup.md) |
+| 理解程式分層與場景 | [系統架構](docs/architecture.md) |
+| 使用題庫與答題紀錄 | [資料格式](docs/data-formats.md) |
+| 查詢檔案原始位置與保留檢查 | [整理規則與驗證](docs/organization.md) |
 
-## 主要功能
+## 儲存庫結構
 
-*   **大廳系統 (Lobby System)**:
-    *   支援多位玩家輸入名字。
-    *   自動建立遊戲場次 (Session) 並上傳至 Firebase。
-*   **問答系統 (Quiz System)**:
-    *   **雲端題庫**: 從 Firebase Realtime Database (`questions` 節點) 動態載入題目。
-    *   **即時回饋**: 答題後立即顯示正確或錯誤，並播放對應音效。
-    *   **輪替機制**: 支援輪流答題模式 (依據 `GlobalVariables.studentNames` 長度取餘數決定當前答題者)。
-*   **數據記錄 (Data Logging)**:
-    *   記錄每題的作答者、是否正確、作答耗時。
-    *   數據即時同步回 Firebase (`game_sessions` 與 `answers` 節點)。
-*   **結果展示**:
-    *   遊戲結束後進入結算畫面 (ResultScene)。
-    *   使用 XCharts 顯示統計圖表 (需確認 ResultScene 實作細節)。
-
-## 專案結構
-
-```
-Assets/
-├── Scenes/
-│   ├── LobbyScene.unity    # 遊戲入口，輸入玩家名稱
-│   ├── GameScene.unity     # 主要問答遊戲畫面
-│   └── ResultScene.unity   # 遊戲結算與圖表展示
-├── Scripts/
-│   ├── FirebaseManager.cs  # 處理 Firebase 連線與數據上傳
-│   ├── LobbyManager.cs     # 大廳邏輯，處理玩家名稱與 Session 建立
-│   ├── QuizManager.cs      # 遊戲核心邏輯，載入題目與處理答題
-│   ├── ResultManager.cs    # 結算畫面邏輯
-│   ├── DataModels.cs       # 資料結構定義 (SessionData, AnswerData 等)
-│   ├── GlobalVariables.cs  # 全域變數 (儲存玩家名單、資料庫 URL 等)
-│   ├── Question.cs         # 題目資料結構
-│   └── QuestionData.cs     # 題目相關資料結構
-├── XCharts-master/         # XCharts 圖表套件
-└── ...
+```text
+DroneGame/
+├── Assets/                    Unity 資源與按功能分層的程式
+│   ├── Scripts/
+│   │   ├── Core/              共用狀態
+│   │   ├── Models/            題目、場次與作答模型
+│   │   ├── Infrastructure/    Firebase 整合
+│   │   ├── Features/          大廳、玩家、掃描、問答與結果
+│   │   └── UI/                確認視窗
+│   ├── Scenes/               五個遊戲場景
+│   └── ...                   音效、介面、外部套件與其他資源
+├── Packages/                 Unity 套件清單
+├── ProjectSettings/          Unity 設定
+├── data/question-banks/      20 題範例題庫
+├── 國科會/
+│   ├── 01_計畫與申請/
+│   ├── 02_活動與教材/
+│   ├── 03_資料與分析/
+│   ├── 04_研究成果/
+│   ├── 05_參考文獻/
+│   └── 06_寫作範本/
+├── docs/                     設定、架構、格式、整理與來源對照
+└── artifacts/burst-debug/    原有 Burst 除錯資料留存
 ```
 
-## 安裝與設定 Requirements
+Unity 專案仍以儲存庫根目錄開啟。腳本與其 `.meta` 一起搬移，原有 GUID、場景與資源內容保留。
 
-1.  **Unity Version**: 建議使用 Unity 2021.3 或更高版本 (專案設定顯示為 Unity 2022/2023 相容)。
-2.  **Firebase SDK**: 專案已包含 Firebase Database 與 Analytics 套件。
-    *   需確保 `Assets/google-services.json` 設定檔正確對應您的 Firebase 專案。
-3.  **XCharts**: 用於圖表繪製 (已包含在專案中)。
-4.  **TextMesh Pro**: 用於 UI 文字顯示。
+## 遊戲流程
 
-## 快速開始
-
-1.  開啟 Unity Hub 並加入此專案。
-2.  確認 `Assets/google-services.json` 是否存在且配置正確。
-3.  開啟 `Assets/Scenes/LobbyScene.unity`。
-4.  按下 Play 按鈕開始遊戲。
-5.  輸入玩家名稱後點擊「開始遊戲」。
-
-## Firebase 資料結構範例
-
-**Questions (題目)**:
-```json
-{
-  "questions": {
-    "q1": {
-      "questionText": "Unity 是什麼?",
-      "options": ["遊戲引擎", "繪圖軟體", "文書工具", "作業系統"],
-      "correctOptionIndex": 0,
-      "difficultyLevel": 1
-    }
-  }
-}
+```mermaid
+flowchart LR
+    L[大廳 建立場次] --> P[選擇玩家]
+    P --> S[掃描難度 QR Code]
+    S --> Q[隨機抽題與作答]
+    Q --> P
+    P --> R[結束場次與結果圖表]
+    R --> L
 ```
 
-**Game Sessions (遊戲場次)**:
-```json
-{
-  "game_sessions": {
-    "session_id_123": {
-      "timestamp": "2023-10-27 10:00:00",
-      "students": ["PlayerA", "PlayerB"]
-    }
-  }
-}
-```
+專案版本為 Unity **2022.3.36f1**。QR Code 使用 `qid=qL1`、`qid=qL2`、`qid=qL3`，對應三個難度。遊戲讀取 Firebase 根節點下的題目，作答寫入 `game_sessions/{sessionID}/answers`。題庫包裝的差異與原始紀錄狀態詳見資料格式說明。
 
-## 注意事項
+## 檔案保留
 
-*   請確保執行環境有網路連線，否則無法載入題目與上傳數據。
-*   若遇到 Firebase 連線問題，請檢查 Bundle ID (`com.teacher.quizgame`) 是否與 Firebase Console 設定一致。
+36 個研究原始檔案、全部既有程式與資源都已保留；只調整目錄與閱讀入口。同內容來源副本、原稿、修訂稿、DOCX、PDF、DOC、ODT 與 JSON 皆各自留存。PDF 沿用原有 Git LFS，研究資料保留原始位元組。
+
+[搬移清單](docs/file-moves.json)記錄新舊路徑與 SHA-256。[先前 README](docs/legacy/README-before-organization.md)完整留存供歷史查閱，現行操作以本頁與 `docs/` 為準。
 
 ## 授權
 
-此專案為教學或內部使用用途。
-
-## 國科會研究資料
-
-[國科會](國科會/) 收錄研究計畫、冬令營資料、參考論文與 TANET 海報論文，保留原始資料夾分類與檔案內容。
+沿用原專案說明：此專案為教學或內部使用用途。研究來源文件與第三方套件的原有授權資訊保留於各自檔案中。

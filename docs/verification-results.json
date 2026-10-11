@@ -1,0 +1,11 @@
+{
+  "existing_files_preserved": 1615,
+  "source_research_files_unchanged": 36,
+  "exact_content_renames": 64,
+  "unpaired_deletions": 0,
+  "script_guids_preserved": 13,
+  "markdown_files_checked": 17,
+  "links_checked": 127,
+  "unity_runtime_tested": false,
+  "baseline_commit": "80687539ec416f47762ee26649beb8cb682e1d74"
+}
