@@ -1,11 +1,14 @@
-# 專案文件
+# Documentation
 
-| 文件 | 用途 |
+| 入口 | 用途 |
 | --- | --- |
-| [環境設定與操作流程](setup.md) | Unity 版本、開啟專案、Firebase 與實際操作。 |
-| [系統架構](architecture.md) | 程式責任、場景轉場、資料流與研究資料關係。 |
-| [題庫與答題紀錄格式](data-formats.md) | 題庫包裝、難度 QR、作答模型與來源狀態。 |
-| [整理規則與驗證](organization.md) | 保留規則、搬移對照與檢查範圍。 |
-| [原有 README 留存](legacy/README-before-organization.md) | 整理前說明全文。 |
+| [Getting started](setup.md) | Unity 版本、環境設定與操作。 |
+| [Architecture](architecture.md) | 程式分層、場景轉場與資料流。 |
+| [Data formats](data-formats.md) | 題庫包裝、QR 難度與作答模型。 |
+| [Research guide](research/README.md) | 研究工作流程與文件入口。 |
+| [Teaching](teaching/README.md) | 教學設計與活動教材。 |
+| [Templates](templates/README.md) | 報告與論文範本。 |
+| [File index](archive/file-index.md) | 原始檔案、來源與現行位置。 |
+| [Organization](organization.md) | 目錄規則、搬移對照與完整性驗證。 |
 
 [返回專案總覽](../README.md)

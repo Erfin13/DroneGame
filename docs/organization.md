@@ -1,42 +1,30 @@
-# 整理規則與驗證
+# Repository organization
 
-## 整理範圍
+## 目錄規則
 
-以整理前提交 `80687539ec416f47762ee26649beb8cb682e1d74` 為基準，原有 **1615 個受 Git 追蹤的檔案**全部保留。研究文件依工作流程分成六類；13 個遊戲腳本與其 `.meta` 成對搬移；20 題範例與 Burst 除錯資料各自歸位。既有 Unity 根目錄與第三方資源不改動。
+頂層目錄按專案用途編排：`Assets/`、`Packages/`、`ProjectSettings/` 為 Unity 專案；`docs/` 存放設計、操作、計畫與範本；`data/` 保存題庫及原始紀錄；`reports/` 保存分析與成果報告；`papers/` 保存論文與參考文獻；`artifacts/` 保存原有除錯產物。
 
-原檔內容不改寫；README 重新編排，先前 README 完整保留於 [legacy](legacy/README-before-organization.md)。同內容來源副本、不同文件格式、原稿與修訂稿均各自存在。空目錄不屬 Git 檔案；搬移後的舊目錄名稱可由清單追溯。
+資料夾使用用途明確的英文名稱，不沿用個人本機資料夾名或行政單位名稱。原始中文檔名保留，避免改變文件辨識與來源追溯。研究資料的入口在 [Research guide](research/README.md)，並整合到各功能目錄。
 
-## 路徑與版本規則
+## 版本與保留
 
-- 研究資料以兩位數分類順序排列，子目錄表示用途或版本，原始檔名保留。
-- 同內容但來源不同的檔案以來源子目錄保留，不合併去重。
-- 不依檔案修改時間推定版本，也不將「更改版」自動宣告為正式定稿。
-- 程式依 Core、Models、Infrastructure、Features、UI 分層；不改 namespace、class 或執行邏輯。
-- Unity 腳本 `.meta` 的 GUID 保持一致；新資料夾各有獨立 `.meta`。
-- PDF 沿用儲存庫 Git LFS；`國科會/** -text` 確保原始資料位元組保留。
+原稿、修訂稿、不同格式與同內容來源副本均各自保留。計畫來源副本位於 `source-copies/` 或 `source-reference/`，參考專題的不同來源以子目錄區分；不以修改時間判定定稿版本。
 
-## 追溯清單
+程式按 Core、Models、Infrastructure、Features、UI 分層，13 個腳本的 `.meta` 與 GUID 保留。Unity 根目錄、場景、第三方資源及專案設定保持原位置。PDF 沿用 Git LFS，活動題庫 JSON 與原始研究紀錄禁止換行正規化，保留原始位元組。
 
-| 清單 | 範圍 |
+## 來源與搬移清單
+
+| 清單 | 用途 |
 | --- | --- |
-| [全儲存庫搬移清單](file-moves.json) | 64 個搬移檔案的新舊路徑、大小與 SHA-256。 |
-| [研究檔案清單](../國科會/檔案清單.json) | 36 個原始研究檔案的來源、用途、頁數或資料狀態。 |
-| [研究閱讀索引](../國科會/檔案索引.md) | 每個原始研究檔案的可點選入口。 |
-| [版本與來源](../國科會/版本與來源.md) | 文件系列與同內容副本。 |
+| [Research file manifest](archive/research-files.json) | 36 個研究原檔的來源、現行位置、大小與 SHA-256。 |
+| [File index](archive/file-index.md) | 可點選的完整原始檔案索引。 |
+| [Versions](archive/versions.md) | 文件版本、格式及同內容副本。 |
+| [Cumulative file moves](file-moves.json) | 從最初整理前提交起的 64 個原檔搬移對照。 |
+| [Repository layout moves](repository-layout-moves.json) | 本次移出本機命名目錄的 46 個檔案對照。 |
+| [Verification results](verification-results.json) | 原始檔保留、連結與 Unity 引用檢查結果。 |
 
-## 驗證結果
+最初 1,615 個受追蹤檔案仍全部保留。重新編排的 README 之整理前內容保存於 [Legacy README](legacy/README-before-organization.md)。歷史清單中的舊路徑用於追溯，現行路徑以各清單的 `path` 欄位為準。
 
-[檢查結果](verification-results.json)記錄全檔案保留、64 個內容一致的搬移、13 個腳本 GUID 與 127 個文件連結的核對結果。
-
-## 保留檢查
-
-1. 整理前記錄每個既有檔案的 SHA-256；整理後逐檔對照，新路徑內容一致。
-2. 原有 README 的 SHA-256 由歷史副本核對，其他既有檔案由現行位置核對。
-3. 暫存檔案以 Git blob 或 LFS pointer 的 SHA-256 檢查，確認提交保存原始內容。
-4. 檢查 13 個腳本的 GUID、對應場景引用與 Build Settings 的場景路徑。
-5. 檢查新增 Markdown 的本機相對連結，確保入口指向存在檔案。
-6. Git 變更以完整內容相同的搬移或新增為主，沒有未配對的原始檔刪除。
-
-這些是檔案與引用的靜態驗證。本次未執行 Unity Play Mode、相機或 Firebase 連線測試，沒有重新計算研究統計。
+本次檢查檔案雜湊、Git 暫存內容、來源副本、Markdown 連結與 Unity GUID；沒有啟動 Unity、相機或 Firebase 執行測試，也沒有重新計算研究統計。
 
 [返回專案總覽](../README.md)

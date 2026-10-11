@@ -1,11 +1,12 @@
 {
-  "existing_files_preserved": 1615,
-  "source_research_files_unchanged": 36,
-  "exact_content_renames": 64,
-  "unpaired_deletions": 0,
-  "script_guids_preserved": 13,
-  "markdown_files_checked": 17,
-  "links_checked": 127,
+  "baseline_commit": "a462a2812b2f9c3900f4c7d5c51cad61df10343f",
+  "previous_tracked_files_retained": 1646,
+  "relocated_files": 46,
+  "original_research_files_unchanged": 36,
+  "unity_script_guids_preserved": 13,
+  "local_named_directory_exists": false,
+  "markdown_files_checked": 20,
+  "links_checked": 160,
   "unity_runtime_tested": false,
-  "baseline_commit": "80687539ec416f47762ee26649beb8cb682e1d74"
+  "initial_files_retained": 1615
 }
